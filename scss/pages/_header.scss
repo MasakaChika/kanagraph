@@ -1,0 +1,204 @@
+@use '../mixins' as *;
+
+/* ------- header ------- */
+.site-header {
+  width: 100%; // 幅100%
+  height: 120px; // 高さ120px
+  background: var(--color-background);
+  position: fixed; // 固定
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1168px) minmax(1.5rem, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex; // .logoとnavを横に並べる
+  }
+
+  &__logo {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: auto;
+      max-height: 73px;
+    }
+  }
+
+  // ナビゲーションメニューのスタイリング
+  &__gnav {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+
+    ul {
+      list-style: none;
+      inset: 0;
+
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      gap: 3rem;
+      align-items: center;
+      justify-self: flex-end;
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          font-weight: 300;
+          font-family: var(--font-title-en);
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  // SNSアイコンのスタイリング
+  &__sns {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    justify-self: flex-end;
+
+    a {
+      width: 2rem;
+      height: auto;
+      display: inline flex;
+    }
+  }
+}
+
+/* ------- hamburger menu ------- */
+.site-nav-toggle {
+  display: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after,
+  span {
+    content: '';
+    height: 1px;
+    width: 30px;
+    background-color: var(--color-primary);
+    position: absolute;
+  }
+
+  span {
+    transform-origin: left center;
+  }
+
+  &::before {
+    top: calc(50% - 8px);
+  }
+
+  &::after {
+    top: calc(50% + 8px);
+  }
+}
+
+.site-nav-checkbox {
+  display: none; // チェックボックスは画面上から隠します
+}
+
+@include mq {
+  .site-nav-toggle {
+    display: flex; // ハンバーガーメニューを表示します
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background: var(--color-primary); // 背景色と透明度を設定
+    transform: translateX(100%); // 右側からスライドインするために初期位置を設定
+    transition: transform 0.5s ease-in-out; // スムーズな表示切り替えのためのトランジション
+
+    .site-nav-checkbox:checked ~ & {
+      transform: translateX(0);
+    }
+  }
+
+  .site-header {
+    &__nav-container {
+      display: flex;
+      align-items: center;
+      padding: 2.5rem;
+    }
+
+    &__gnav {
+      grid-template-columns: 1fr; // gridを1columnに指定
+      gap: 3.5rem; // 56px
+      align-items: center;
+
+      ul {
+        grid-template-columns: 1fr;
+        gap: 3.5rem; // 56px
+        justify-self: flex-start;
+
+        li {
+          a {
+            color: var(--color-background);
+          }
+        }
+      }
+    }
+
+    // SNSアイコンのスタイリング
+    &__sns {
+      gap: 3.5rem;
+      justify-self: flex-start;
+    }
+  }
+
+  .site-nav-checkbox:checked ~ .site-nav-toggle {
+    span {
+      transform: scaleX(0); // チェックボックスがチェックされたときに表示
+    }
+
+    &::before {
+      top: 50%;
+      transform: rotate(30deg);
+      background-color: var(--color-background);
+    }
+
+    &::after {
+      top: 50%;
+      transform: rotate(-30deg);
+      background-color: var(--color-background);
+    }
+  }
+  .cls-1 {
+    stroke: var(--color-background);
+  }
+}
+
+@include mq {
+  .site-header {
+    height: 80px;
+  }
+  .site-nav {
+    width: 50%;
+    height: 100vh;
+  }
+}
+/* ------- /.hamburger menu ------- */

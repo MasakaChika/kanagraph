@@ -1,0 +1,215 @@
+@use '../mixins' as *;
+
+.main-visual {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+}
+
+.main-content {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: center;
+
+  &__title {
+    grid-row: 1;
+  }
+  &__article {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3つの等幅の列 */
+    gap: 20px; /* 列と行の間の間隔 */
+  }
+
+  &__article-card {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      font-family: var(--text-primary);
+      font-size: 0.875rem;
+      letter-spacing: 0.1em;
+      font-weight: 300;
+      text-align: start;
+    }
+  }
+
+  &__button {
+    grid-row: 3;
+    justify-self: center;
+    margin-top: 4rem;
+    width: 200px;
+  }
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__title {
+    grid-row: 1;
+  }
+
+  &__photo {
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  &__introduction {
+    grid-row: 3;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 0.25rem;
+  }
+  &__role,
+  &__name,
+  &__english-name,
+  &__origin {
+    justify-self: center;
+    align-self: center;
+    color: var(--color-primary);
+  }
+
+  &__role,
+  &__english-name {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    font-size: 0.9375rem;
+    letter-spacing: 0.1em;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+
+  &__origin {
+    padding-top: 1.25rem;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__title {
+    grid-row: 1;
+  }
+
+  &__container {
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 0;
+  }
+
+  &__family {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__wedding {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  &__maternity {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  &__newborn {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  &__evenr {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  &__profile {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+
+.works-card {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-title-en);
+    font-weight: 300;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.plan {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: center;
+
+  &__desc {
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__button {
+    grid-row: 3;
+    justify-self: center;
+    margin-top: 4rem;
+    width: 624px;
+  }
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: center;
+
+  &__text {
+    padding-top: 240px;
+    justify-self: center;
+    align-self: center;
+  }
+  &__button {
+    grid-row: 3;
+    justify-self: center;
+    margin-top: 4rem;
+    width: 624px;
+  }
+}
