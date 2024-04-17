@@ -38,57 +38,6 @@ function my_document_title_separator($separator)
 add_filter('document_title_separator', 'my_document_title_separator');
 
 /**------------------------------------------
- * CSS・JavaScript・typekitの読み込み
- *------------------------------------------*/
-// function my_scripts_method()
-// {
-
-// 	// カスタムスクリプトの登録
-// 	wp_enqueue_script(
-// 		'custom_script',
-// 		get_template_directory_uri() . '/assets/js/main.js',
-// 		array(),
-// 		true
-// 	);
-
-// 	// スクリプトにテンプレートディレクトリの URL を渡す
-// 	$script_data = array('templateUrl' => get_template_directory_uri());
-// 	wp_localize_script('custom_script', 'themeParams', $script_data);
-
-// 	// Typekitのスクリプトの登録
-// 	wp_enqueue_script(
-// 		'typekit_script',
-// 		get_template_directory_uri() . '/assets/js/typekit.js', // typekit.js のパス
-// 		array(),
-// 		null,
-// 		false // スクリプトはフッターに読み込むように設定（最後に読み込む）
-// 	);
-
-// 	// スタイルシートの登録（Typekitのみ）
-// 	wp_enqueue_style(
-// 		'typekit_fonts',
-// 		'https://use.typekit.net/coy3ocg.css',
-// 		array(),
-// 		null
-// 	);
-
-// 	// スタイルシートの登録（SwiperとTypekitに依存）
-// 	wp_enqueue_style(
-// 		'style-css',
-// 		get_template_directory_uri() . '/assets/css/app.css',
-// 		array('typekit_fonts') // 'typekit_fonts' に依存
-// 	);
-// }
-// add_action('wp_enqueue_scripts', 'my_scripts_method');
-
-// // Typekitのフォントを読み込む
-// function enqueue_typekit_fonts()
-// {
-// 	wp_enqueue_style('typekit-fonts', 'https://use.typekit.net/coy3ocg.css');
-// }
-// add_action('wp_enqueue_scripts', 'enqueue_typekit_fonts');
-
-/**------------------------------------------
  * CSS・JavaScript・Googlefontsの読み込み
  *------------------------------------------*/
 function my_scripts_method()
