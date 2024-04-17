@@ -1,0 +1,51 @@
+@use '../mixins' as *;
+
+.plan {
+  &__header {
+    grid-column: 1 / -1;
+  }
+
+  &__container {
+    grid-column: 2;
+  }
+
+  &__title-area {
+    width: 100%;
+    height: clamp(6rem, 30vw, 22.5rem);
+    background: var(--header-gradation);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+  }
+
+  &__title {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    font-family: var(--font-title-en);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: clamp(1.5rem, 0.591rem + 4.55vw, 4rem);
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  &__price {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+    font-family: var(--font-primary);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
+    color: #fff;
+  }
+
+  &__tax {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);
+    color: #fff;
+  }
+}

@@ -75,6 +75,7 @@ main {
   color: var(--color-primary);
   font-size: 4rem;
   font-weight: 300;
+  letter-spacing: 0.1em;
   text-transform: capitalize;
 }
 
@@ -119,4 +120,19 @@ main {
   color: #fff;
   background-color: rgba(168, 129, 91, 0.7);
   cursor: pointer;
+}
+
+.page-header {
+  width: 100%;
+  height: clamp(7.5rem, -0.61rem + 34.15vw, 25rem);
+  background-color: #ddb5db;
+  font-size: clamp(2.5rem, 0.878rem + 6.83vw, 6rem);
+  font-family: var(--font-title-en);
+  color: var(--color-primary);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,103 @@
+@use '../mixins' as *;
+
+.page-about {
+  grid-column: 1/ -1;
+  width: 100%;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 980px) minmax(2rem, 1fr);
+  align-self: center;
+  justify-self: center;
+  padding-bottom: clamp(3rem, -7.195rem + 42.93vw, 25rem);
+
+  &__header {
+    grid-column: 1 / -1;
+  }
+  &__photo {
+    padding-top: clamp(3rem, -7.195rem + 42.93vw, 25rem);
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__introduction {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+
+  &__profile {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.1em;
+  }
+
+  &__role,
+  &__english-name {
+    font-size: clamp(0.75rem, 0.402rem + 1.46vw, 1.5rem);
+  }
+
+  &__name {
+    font-size: clamp(1.125rem, 0.488rem + 2.68vw, 2.5rem);
+  }
+  &__desc {
+    grid-row: 2;
+    font-size: clamp(0.75rem, 0.055rem + 2.93vw, 2.25rem);
+  }
+
+  &__role,
+  &__name,
+  &__english-name,
+  &__desc {
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-weight: 200;
+    letter-spacing: 0.1em;
+  }
+}
+
+.concept {
+  grid-column: 1/ -1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 980px) minmax(2rem, 1fr);
+  align-self: center;
+  justify-self: center;
+  row-gap: clamp(3rem, -7.195rem + 42.93vw, 25rem);
+
+  &__header {
+    grid-column: 1/ -1;
+    grid-row: 1;
+  }
+
+  &__content {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    justify-self: center;
+  }
+
+  &__title {
+    font-size: clamp(1.25rem, -0.024rem + 5.37vw, 4rem);
+    font-family: var(--font-primary);
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    text-align: end;
+  }
+
+  &__text {
+    font-size: clamp(0.75rem, 0.055rem + 2.93vw, 2.25rem);
+    font-family: var(--font-primary);
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+}

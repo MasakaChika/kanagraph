@@ -2,7 +2,7 @@
 :root {
   /* ------- Fonts ------- */
   --font-primary: "Shippori+Mincho", serif;
-  --font-title-en: "trajan-pro-3", serif;
+  --font-title-en: "trajan-pro-3", "Cinzel", serif;
   --color-background: #ffffff;
   --header-gradation: linear-gradient(90deg, rgba(168, 129, 91, 1) 00%, rgba(246, 226, 207, 1) 100%);
   --color-primary: #a8815b;
@@ -83,6 +83,7 @@ main {
   color: var(--color-primary);
   font-size: 4rem;
   font-weight: 300;
+  letter-spacing: 0.1em;
   text-transform: capitalize;
 }
 
@@ -128,6 +129,21 @@ main {
   cursor: pointer;
 }
 
+.page-header {
+  width: 100%;
+  height: clamp(7.5rem, -0.61rem + 34.15vw, 25rem);
+  background-color: #ddb5db;
+  font-size: clamp(2.5rem, 0.878rem + 6.83vw, 6rem);
+  font-family: var(--font-title-en);
+  color: var(--color-primary);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ------- header ------- */
 .site-header {
   width: 100%;
@@ -160,10 +176,11 @@ main {
   width: auto;
   max-height: 73px;
 }
-.site-header__gnav {
+.site-header__nav-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 3rem;
+  align-items: center;
 }
 .site-header__gnav ul {
   list-style: none;
@@ -185,12 +202,14 @@ main {
 .site-header__sns {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr;
-  gap: 4rem;
+  grid-template-columns: auto; /* アイコンの幅に合わせる */
   justify-self: flex-end;
 }
+.site-header__sns img {
+  display: none;
+}
 .site-header__sns a {
-  width: 2rem;
+  width: 32px;
   height: auto;
   display: inline flex;
 }
@@ -245,14 +264,17 @@ main {
     transform: translateX(0);
   }
   .site-header__nav-container {
-    display: flex;
-    align-items: center;
-    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 0;
   }
   .site-header__gnav {
+    grid-column: 1;
+    grid-row: 1;
     grid-template-columns: 1fr;
-    gap: 3.5rem;
     align-items: center;
+    text-align: center;
   }
   .site-header__gnav ul {
     grid-template-columns: 1fr;
@@ -263,8 +285,23 @@ main {
     color: var(--color-background);
   }
   .site-header__sns {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 280px) minmax(1.5rem, 1fr);
     gap: 3.5rem;
     justify-self: flex-start;
+  }
+  .site-header__sns img {
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+  }
+  .site-header__sns a {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .site-header__sns a svg {
+    stroke: #fff;
   }
   .site-nav-checkbox:checked ~ .site-nav-toggle span {
     transform: scaleX(0);
@@ -288,7 +325,7 @@ main {
     height: 80px;
   }
   .site-nav {
-    width: 50%;
+    width: 100%;
     height: 100vh;
   }
 }
@@ -437,6 +474,7 @@ main {
   font-family: var(--font-title-en);
   font-weight: 300;
   font-size: 2rem;
+  letter-spacing: 0.1em;
   text-transform: capitalize;
 }
 .works-card img {
@@ -475,6 +513,136 @@ main {
   justify-self: center;
   margin-top: 4rem;
   width: 624px;
+}
+
+.page-about {
+  grid-column: 1/-1;
+  width: 100%;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 980px) minmax(2rem, 1fr);
+  align-self: center;
+  justify-self: center;
+  padding-bottom: clamp(3rem, -7.195rem + 42.93vw, 25rem);
+}
+.page-about__header {
+  grid-column: 1/-1;
+}
+.page-about__photo {
+  padding-top: clamp(3rem, -7.195rem + 42.93vw, 25rem);
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+}
+.page-about__photo img {
+  width: 100%;
+}
+.page-about__introduction {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+.page-about__profile {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.1em;
+}
+.page-about__role, .page-about__english-name {
+  font-size: clamp(0.75rem, 0.402rem + 1.46vw, 1.5rem);
+}
+.page-about__name {
+  font-size: clamp(1.125rem, 0.488rem + 2.68vw, 2.5rem);
+}
+.page-about__desc {
+  grid-row: 2;
+  font-size: clamp(0.75rem, 0.055rem + 2.93vw, 2.25rem);
+}
+.page-about__role, .page-about__name, .page-about__english-name, .page-about__desc {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  font-weight: 200;
+  letter-spacing: 0.1em;
+}
+
+.concept {
+  grid-column: 1/-1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 980px) minmax(2rem, 1fr);
+  align-self: center;
+  justify-self: center;
+  row-gap: clamp(3rem, -7.195rem + 42.93vw, 25rem);
+}
+.concept__header {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.concept__content {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  justify-self: center;
+}
+.concept__title {
+  font-size: clamp(1.25rem, -0.024rem + 5.37vw, 4rem);
+  font-family: var(--font-primary);
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  text-align: end;
+}
+.concept__text {
+  font-size: clamp(0.75rem, 0.055rem + 2.93vw, 2.25rem);
+  font-family: var(--font-primary);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.plan__header {
+  grid-column: 1/-1;
+}
+.plan__container {
+  grid-column: 2;
+}
+.plan__title-area {
+  width: 100%;
+  height: clamp(6rem, 30vw, 22.5rem);
+  background: var(--header-gradation);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+}
+.plan__title {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  font-family: var(--font-title-en);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: clamp(1.5rem, 0.591rem + 4.55vw, 4rem);
+  text-transform: capitalize;
+  color: #fff;
+}
+.plan__price {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: end;
+  font-family: var(--font-primary);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
+  color: #fff;
+}
+.plan__tax {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);
+  color: #fff;
 }
 
 /* ------- header ------- */

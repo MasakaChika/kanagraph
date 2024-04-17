@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "name": "Brown",
+          "slug": "brown",
+          "color": "#a8815b"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Cinzel",
+          "slug": "cinzel",
+          "fontFamily": "\"Cinzel\", serif",
+          "fontFace": [
+            {
+              "fontFamily": "Cinzel",
+              "fontWeight": "regular",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"]
+            }
+          ]
+        },
+        {
+          "name": "Shippori Mincho",
+          "slug": "shippori-mincho",
+          "cssFallbacks": "\"Shippori Mincho\", serif",
+          "fontFace": [
+            {
+              "fontFamily": "Shippori Mincho",
+              "fontWeight": "regular",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Shippori+Mincho&display=swap"]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
