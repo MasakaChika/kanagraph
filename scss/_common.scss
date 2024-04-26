@@ -64,21 +64,6 @@ main {
 }
 /* ------- /.svg ------- */
 
-.section-header {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-family: var(--font-title-en);
-  color: var(--color-primary);
-  font-size: 4rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  text-transform: capitalize;
-}
-
 /* ------- botton ------- */
 .button-container {
   text-align: center;
@@ -97,12 +82,13 @@ main {
   color: var(--color-primary);
   background-color: #fff;
   cursor: pointer;
+  position: relative;
 
   &::after {
     content: '>';
     position: absolute;
     top: 50%;
-    right: -10px;
+    right: 2rem;
     transform: translateY(-50%);
   }
 }
@@ -122,6 +108,21 @@ main {
   cursor: pointer;
 }
 
+.section-header {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--font-title-en);
+  color: var(--color-primary);
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+
 .page-header {
   width: 100%;
   height: clamp(7.5rem, -0.61rem + 34.15vw, 25rem);
@@ -135,4 +136,48 @@ main {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.banner {
+  height: clamp(7.5rem, -0.61rem + 34.15vw, 25rem); //共通の高さ
+  width: 100%;
+}
+
+.common-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-title-en);
+  color: var(--color-primary);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: clamp(2.5rem, 0.878rem + 6.83vw, 6rem);
+  text-transform: capitalize;
+}
+
+.banner-type1 {
+  background-image: url('../../assets/img/banner1.webp');
+}
+
+.banner-type2 {
+  background-image: url('../../assets/img/banner2.webp');
+}
+
+.banner-type3 {
+  background-image: url('../../assets/img/banner3.webp');
+}
+
+.banner-type1,
+.banner-type2,
+.banner-type3 {
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }

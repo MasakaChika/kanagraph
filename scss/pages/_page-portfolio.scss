@@ -1,0 +1,81 @@
+@use '../mixins' as *;
+
+.page-portfolio {
+  grid-column: 1/ -1;
+  width: 100%;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 1280px) minmax(2rem, 1fr);
+  align-self: center;
+  justify-self: center;
+  row-gap: clamp(4rem, 1.091rem + 14.55vw, 12rem);
+
+  &__header {
+    grid-column: 1 / -1;
+    background-position: center bottom;
+  }
+
+  > section {
+    grid-column: 2;
+  }
+}
+
+.portfolio-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: clamp(2rem, 1.273rem + 3.64vw, 4rem);
+
+  &__title {
+    font-family: var(--font-title-en);
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    justify-self: center;
+  }
+
+  &__container {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 0;
+  }
+
+  &__photo {
+    width: clamp(10rem, 6.364rem + 18.18vw, 20rem);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__subtitle {
+    grid-column: 1 / -1;
+    font-family: var(--font-title-en);
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+  }
+
+  &__food {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    &-container {
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+
+      > img {
+        width: 100%;
+        height: auto;
+        align-self: center;
+      }
+    }
+  }
+}

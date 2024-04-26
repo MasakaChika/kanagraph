@@ -2,7 +2,7 @@
 
 <main>
 	<section class="page-about">
-		<header class="page-header page-about__header">about</header>
+		<header class="banner common-banner banner-type1 page-about__header">about</header>
 		<div class="page-about__photo">
 			<img src=<?= get_theme_file_uri('assets/img/portlate.png'); ?> alt="村越香奈が写っている写真" />
 		</div>
@@ -22,7 +22,7 @@
 	</section>
 
 	<section class="concept">
-		<header class="page-header concept__header">concept</header>
+		<header class="banner common-banner banner-type3 concept__header">concept</header>
 		<div class="concept__content">
 			<h2 class="concept__title">二度とない愛おしい瞬間を<br>一生モノの記憶へ</h2>
 			<p class="concept__text">誰もがかけがえのない存在であり、<br>

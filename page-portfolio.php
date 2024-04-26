@@ -1,39 +1,114 @@
 <?php get_header(); ?>
 <main>
-	<section class="page-about">
-		<header class="page-header page-about__header">about</header>
-		<div class="page-about__photo">
-			<img src=<?= get_theme_file_uri('assets/img/portlate.png'); ?> alt="村越香奈が写っている写真" />
-		</div>
-		<div class="page-about__introduction">
-			<div class="page-about__profile">
-				<span class="page-about__role">Photographer</span>
-				<h2 class="page-about__name">村越 香奈</h2>
-				<span class="page-about__english-name">Kana Murakoshi</span>
-			</div>
-			<p class="page-about__desc">1993年生まれ。東京都出身。<br>
-				立教大学現代心理学部映像身体学科卒業。<br>
-				2016年より株式会社NHKテクノロジーズに入社。<br>
-				報道番組の音声、撮影業務に携わる。<br>
-				社内カレンダーに自身の写真が採用されたことをきっかけに<br>
-				本格的に写真に目覚める。</p>
-		</div>
-	</section>
+	<div class="page-portfolio">
+		<header class="banner common-banner banner-type2 page-portfolio__header">portfolio</header>
 
-	<section class="concept">
-		<header class="page-header concept__header">concept</header>
-		<div class="concept__content">
-			<h2 class="concept__title">二度とない愛おしい瞬間を<br>一生モノの記憶へ</h2>
-			<p class="concept__text">誰もがかけがえのない存在であり、<br>
-				素敵だということを伝えられるような写真を<br>
-				目指しています。<br>
-				誰かと比較したりせず、<br>
-				ありのままのあなたが何より特別で美しいのだと<br>
-				愛を込めてシャッターを切っています。<br>
-				あっという間に過ぎ去ってしまう<br>
-				特別な今を永遠に…。<br>
-				カタチに残すお手伝いをさせてください。</p>
-		</div>
-	</section>
+		<section class="portfolio-section portfolio-family">
+			<h2 class="portfolio-section__title">family</h2>
+			<div class="portfolio-section__container">
+				<img src="<?= get_template_directory_uri() . '/assets/img/family/family1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
+				<img src="<?= get_template_directory_uri() . '/assets/img/family/family2.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
+				<img src="<?= get_template_directory_uri() . '/assets/img/family/family3.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
+				<img src="<?= get_template_directory_uri() . '/assets/img/family/family4.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
+				<img src="<?= get_template_directory_uri() . '/assets/img/family/family5.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
+				<img src="<?= get_template_directory_uri() . '/assets/img/family/family6.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
+				<img src="<?= get_template_directory_uri() . '/assets/img/family/family7.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
+				<img src="<?= get_template_directory_uri() . '/assets/img/family/family8.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
+			</div>
+
+		</section>
+		<section class="portfolio-section portfolio-wedding">
+			<h2 class="portfolio-section__title">wedding</h2>
+			<div class="portfolio-section__container">
+				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding1.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding2.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding3.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding4.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding5.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding6.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding7.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding8.webp'; ?>" alt="" class="portfolio-section__photo">
+			</div>
+
+		</section>
+		<section class="portfolio-section portfolio-maternty">
+			<h2 class="portfolio-section__title">maternty</h2>
+			<div class="portfolio-section__container">
+				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity2.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity3.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity4.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity5.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity6.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity7.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity8.webp'; ?>" alt="" class="portfolio-section__photo">
+			</div>
+
+		</section>
+		<section class="portfolio-section portfolio-newborn">
+			<h2 class="portfolio-section__title">new born</h2>
+			<div class="portfolio-section__container">
+				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn1.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn2.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn3.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn4.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn5.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn6.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn7.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn8.webp'; ?>" alt="" class="portfolio-section__photo">
+			</div>
+
+		</section>
+		<section class="portfolio-section portfolio-event">
+			<h2 class="portfolio-section__title">traditional event</h2>
+			<div class="portfolio-section__container">
+				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event1.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event2.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event3.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event4.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event5.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event6.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event7.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event8.webp'; ?>" alt="" class="portfolio-section__photo">
+			</div>
+
+		</section>
+		<section class="portfolio-section portfolio-pofile">
+			<h2 class="portfolio-section__title">profile</h2>
+			<div class="portfolio-section__container">
+				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile1.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile2.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile3.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile4.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile5.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile6.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile7.webp'; ?>" alt="" class="portfolio-section__photo">
+				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile8.webp'; ?>" alt="" class="portfolio-section__photo">
+			</div>
+
+		</section>
+		<section class="portfolio-section portfolio-other">
+			<h2 class="portfolio-section__title">other</h2>
+			<div class="portfolio-section__food">
+				<h3 class="portfolio-section__subtitle">food</h3>
+				<div class="portfolio-section__food-container">
+					<img src="<?= get_template_directory_uri() . '/assets/img/food/food1.webp'; ?>" alt="">
+					<img src="<?= get_template_directory_uri() . '/assets/img/food/food2.webp'; ?>" alt="">
+					<img src="<?= get_template_directory_uri() . '/assets/img/food/food3.webp'; ?>" alt="">
+					<img src="<?= get_template_directory_uri() . '/assets/img/food/food4.webp'; ?>" alt="">
+				</div>
+			</div>
+			<div class="portfolio-section__landscape">
+				<h3 class="portfolio-section__subtitle">landscape</h3>
+				<div class="portfolio-section__landscape-container">
+					<img src="<?= get_template_directory_uri() . '/assets/img/landscape/landscape1.webp'; ?>" alt="">
+					<img src="<?= get_template_directory_uri() . '/assets/img/landscape/landscape2.webp'; ?>" alt="">
+					<img src="<?= get_template_directory_uri() . '/assets/img/landscape/landscape3.webp'; ?>" alt="">
+					<img src="<?= get_template_directory_uri() . '/assets/img/landscape/landscape4.webp'; ?>" alt="">
+				</div>
+			</div>
+		</section>
+	</div>
+
 </main>
 <?php get_footer(); ?>

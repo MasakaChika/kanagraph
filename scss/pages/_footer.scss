@@ -2,9 +2,13 @@
 /* ------- header ------- */
 .site-footer {
   width: 100%; // 幅100%
-  height: auto; // 高さ120px
+  // height: auto; // 高さ120px
   margin-top: 360px;
-  // background-image: url();
+  background-image: url('../../assets/img/footer.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -400px;
+  height: 200px;
 
   display: grid;
   grid-template-columns: minmax(1rem, 1fr) minmax(auto, 597px) minmax(1.5rem, 1fr);
@@ -13,6 +17,7 @@
 
   &__container {
     grid-column: 2;
+    grid-row: 2;
     height: 100%;
     width: 100%;
 
@@ -26,6 +31,7 @@
     grid-template-columns: repeat(6, auto);
     gap: 1rem;
     align-items: center;
+
     li {
       width: auto;
       font-family: var(--font-title-en);

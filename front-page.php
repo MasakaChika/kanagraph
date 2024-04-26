@@ -9,7 +9,7 @@
 	<div class="main-content">
 		<!-- news -->
 		<section class="news" id="news">
-			<header class="section-header news__title">news</header>
+			<header class="banner common-banner section-title news__title">news</header>
 			<ul class="news__article">
 				<?php
 				$args = array(
@@ -39,9 +39,9 @@
 
 		<!-- about -->
 		<section class="about" id="about">
-			<header class="section-header about__title">about</header>
+			<header class="banner common-banner section-title about__title">about</header>
 			<div class="about__photo">
-				<img src="<?= get_template_directory_uri() . '/assets/img/portlate.png'; ?>" alt="ポートレート">
+				<img src="<?= get_template_directory_uri() . '/assets/img/portrait.webp'; ?>" alt="ポートレート">
 			</div>
 			<div class="about__introduction">
 				<span class="about__role">Photographer</span>
@@ -49,12 +49,15 @@
 				<span class="about__english-name">Kana Murakoshi</span>
 				<p class="about__origin">1993年生まれ。東京都出身。</p>
 			</div>
+			<div class="button-container about__button">
+				<button class="button">more</button>
+			</div>
 		</section>
 		<!-- /.about -->
 
 		<!-- portfolio -->
 		<section class="portfolio" id="portfolio">
-			<header class="section-header portfolio__title">portfolio</header>
+			<header class="banner common-banner section-title portfolio__title">portfolio</header>
 			<div class="portfolio__container">
 				<div class="works-card portfolio__family">
 					<h3 class="works-card__title">family</h3>
@@ -84,27 +87,25 @@
 		</section>
 		<!-- /.portfolio -->
 
-		<!-- plan -->
-		<section class="plan" id="plan">
-			<header class="section-header plan__title">plan</header>
-			<p class="plan__desc">３つの撮影プランをご用意しました。
-				撮影日までの流れもこちらをご覧ください</p>
-			<div class="button-container plan__button">
-				<button class="button">more details</button>
-			</div>
-		</section>
-		<!-- /.plan -->
-
-		<!-- contact -->
-		<section class="contact" id="contact">
-			<p class="contact__text">撮影に関するご依頼や、<br>
-				お仕事のご相談はこちらから</p>
-			<div class="button-container contact__button">
-				<button class="button-color">contact</button>
-			</div>
-
-		</section>
-		<!-- /.contact -->
+		<!-- plan&contact -->
+		<div class="plan-contact">
+			<section class="plan" id="plan">
+				<header class="banner common-banner section-title plan__title">plan</header>
+				<p class="plan__desc">３つの撮影プランをご用意しました。
+					撮影日までの流れもこちらをご覧ください</p>
+				<div class="button-container plan__button">
+					<button class="button">more details</button>
+				</div>
+			</section>
+			<section class="contact" id="contact">
+				<p class="contact__text">撮影に関するご依頼や、<br>
+					お仕事のご相談はこちらから</p>
+				<div class="button-container contact__button">
+					<button class="button-color">contact</button>
+				</div>
+			</section>
+		</div>
+		<!-- /.plan&contact -->
 	</div>
 
 </main>
