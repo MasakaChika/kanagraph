@@ -880,9 +880,97 @@ main {
   letter-spacing: 0.1em;
   color: var(--color-primary);
 }
-.plan__option {
+.plan__common {
   grid-column: 1/3;
   grid-row: 2;
+  padding: 1rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
+}
+.plan__common > p,
+.plan__common > ul > li {
+  font-family: var(--font-primary);
+  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  color: var(--color-primary);
+}
+.plan__common p {
+  font-weight: 600;
+}
+.plan__option {
+  grid-column: 3;
+  grid-row: 2;
+}
+.plan__option > h3 {
+  font-family: var(--font-primary);
+  font-size: clamp(0.9rem, 0.755rem + 0.73vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  text-transform: capitalize;
+}
+.plan__option-price {
+  font-family: var(--font-primary);
+  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  color: var(--color-primary);
+}
+.plan__option-price > span {
+  font-size: 0.7rem;
+}
+
+.plan-section-title {
+  height: 100px;
+  width: 100%;
+  background: var(--header-gradation);
+  align-content: center;
+  padding-left: 5%;
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.process {
+  grid-column: 2;
+}
+.process__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+}
+.process__step {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 0.5fr;
+}
+.process__step-number {
+  font-family: var(--font-primary);
+  font-size: clamp(2rem, 1.273rem + 3.64vw, 4rem);
+  color: var(--color-primary);
+  padding-top: 24px;
+  line-height: 1;
+}
+.process__step-img {
+  align-self: center;
+  justify-self: center;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+}
+.process__step > p {
+  font-family: var(--font-primary);
+  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  color: var(--color-primary);
+}
+
+.policy {
+  grid-column: 2;
 }
 
 /* ------- header ------- */

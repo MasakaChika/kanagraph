@@ -64,59 +64,114 @@
 				</ul>
 		</section>
 
-		<section class="plan__option">
-			<h3 class="option__title">option</h3>
-			<ul class="option__point">
-				<li>延長料金 11,000円/30分</li>
-				<li>スピード納品 11,000円</li>
-				<li>小物レンタル（ブーケ、バースデーバルーンなど） 1,000円</li>
+		<section class="plan__common">
+			<p>※こちらの内容は全プラン共通事項です。必ずご確認ください。</p>
+			<ul>
+				<li>・ブレ写真や目つぶりの写真はのぞいて納品いたします。</li>
+				<li>・待ち合わせからの移動時間も含めた撮影時間です。</li>
+				<li>・土日祝日は+2000円いただきます。</li>
+				<li>・入場料や撮影使用料が必要な場所での撮影はカメラマン分も含めてご負担をお願いしております。</li>
 			</ul>
 		</section>
 
-		<section class="plan__process">
-			<div class="step">
-				<img src="step1.png" alt="Step 1">
+		<section class="plan__option">
+			<h3>option</h3>
+			<table>
+				<tr>
+					<td class="plan__option-price">延長料金</td>
+					<td class="plan__option-price">11000円<span>/30分</span></td>
+				</tr>
+				<tr>
+					<td class="plan__option-price">スピード納品</td>
+					<td class="plan__option-price">11000円</td>
+				</tr>
+				<tr>
+					<td class="plan__option-price">小物レンタル<br><span>（ブーケ、バースデーバルーンなど）</span></td>
+					<td class="plan__option-price">1000円</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	<section class="process">
+		<h2 class="process__title plan-section-title">納品までの流れ</h2>
+		<div class="process__container">
+			<div class="process__step">
+				<span class="process__step-number">01</span>
+				<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step1.png'; ?>" alt="Step 1">
 				<p>①コンタクトフォームより必要事項を記入してお申し込みください。</p>
 			</div>
 
-			<div class="step">
-				<img src="step2.png" alt="Step 2">
+			<div class="process__step">
+				<span class="process__step-number">02</span>
+				<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step2.png'; ?>" alt="Step 2">
 				<p>②確認メールをお送りいたしますので必ずご確認ください。撮影地やご希望のプランをお聞きし、見積書を作成いたしますので、撮影日前日までに振り込みをお願いいたします。</p>
 			</div>
-			<div class="step">
-				<img src="step3.png" alt="Step 3">
+			<div class="process__step">
+				<span class="process__step-number">03</span>
+				<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step3.png'; ?>" alt="Step 3">
 				<p>③撮影当日素敵な思い出になるよう心を込めて撮影いたします。</p>
 			</div>
-			<div class="step">
-				<img src="step4.png" alt="Step 4">
+			<div class="process__step">
+				<span class="process__step-number">04</span>
+				<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step4.png'; ?>" alt="Step 4">
 				<p>④撮影後2週間程度で納品いたします。お急ぎの場合は追加料金11000円にて３日後までに納品することも可能です。Google Driveにアップロードしますのでダウンロードをお願いいたします。</p>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="plan__policy PolicySection policy-section">
-			<div class="CancellationPolicy cancellation-policy">
-				<h2 class="cancellation-policy__title">キャンセル料金</h2>
-				<p class="cancellation-policy__description">キャンセルの場合は以下の料金をいただきます。</p>
-				<ul class="cancellation-policy__list">
-					<li class="cancellation-policy__item">当日：１００％</li>
-					<li class="cancellation-policy__item">３日前：５０％</li>
-					<li class="cancellation-policy__item">７日前：２０％</li>
-				</ul>
-			</div>
 
-			<div class="PostponementPolicy postponement-policy">
-				<h2 class="postponement-policy__title">延期料金</h2>
-				<p class="postponement-policy__description">延期の場合は以下の料金をいただきます。</p>
-				<ul class="postponement-policy__list">
-					<li class="postponement-policy__item">天候不良による延期の場合、１回まで無料。</li>
-					<li class="postponement-policy__item">お客様都合の場合：</li>
-					<ul class="postponement-policy__sublist">
-						<li class="postponement-policy__subitem">当日：１００％</li>
-						<li class="postponement-policy__subitem">３日前：５０％</li>
-					</ul>
-				</ul>
-			</div>
-		</section>
-	</div>
+	<section class="plan__policy PolicySection policy-section policy">
+		<div class="CancellationPolicy cancellation-policy">
+			<h2 class="cancellation-policy__title plan-section-title">キャンセル・延期について</h2>
+			<p class="cancellation-policy__description">ご予約確定後にキャンセルされた場合、以下のキャンセル料をお支払いいただきます</p>
+			<table>
+				<thead>
+					<tr>
+						<th>撮影までの日にち</th>
+						<th>キャンセル料</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>当日</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td>前日-3日前</td>
+						<td>50%</td>
+					</tr>
+					<tr>
+						<td>4-7日前</td>
+						<td>40%</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="PostponementPolicy postponement-policy">
+			<p class="postponement-policy__description">延期の場合は以下の料金をいただきます。天候不良による延期の場合、１回まで無料。<br>
+				お客様都合の延期の場合、以下の料金をお支払いいただきます。</p>
+			<table>
+				<thead>
+					<tr>
+						<th>撮影までの日にち</th>
+						<th>料金</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>当日</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td>前日-3日前</td>
+						<td>50%</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</section>
+
 </main>
 <?php get_footer(); ?>
