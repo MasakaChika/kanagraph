@@ -3,7 +3,7 @@
 	<div class="page-portfolio">
 		<header class="banner common-banner banner-type2 page-portfolio__header">portfolio</header>
 
-		<section class="portfolio-section portfolio-family">
+		<section class="portfolio-section" id="portfolio-family">
 			<h2 class="portfolio-section__title">family</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/family/family1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
@@ -17,7 +17,7 @@
 			</div>
 
 		</section>
-		<section class="portfolio-section portfolio-wedding">
+		<section class="portfolio-section" id="portfolio-wedding">
 			<h2 class="portfolio-section__title">wedding</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding1.webp'; ?>" alt="" class="portfolio-section__photo">
@@ -29,9 +29,9 @@
 				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding7.webp'; ?>" alt="" class="portfolio-section__photo">
 				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding8.webp'; ?>" alt="" class="portfolio-section__photo">
 			</div>
-
 		</section>
-		<section class="portfolio-section portfolio-maternty">
+
+		<section class="portfolio-section" id="portfolio-maternty">
 			<h2 class="portfolio-section__title">maternty</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp'; ?>" alt="" class="portfolio-section__photo">
@@ -43,9 +43,9 @@
 				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity7.webp'; ?>" alt="" class="portfolio-section__photo">
 				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity8.webp'; ?>" alt="" class="portfolio-section__photo">
 			</div>
-
 		</section>
-		<section class="portfolio-section portfolio-newborn">
+
+		<section class="portfolio-section" id="portfolio-newborn">
 			<h2 class="portfolio-section__title">new born</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn1.webp'; ?>" alt="" class="portfolio-section__photo">
@@ -57,9 +57,9 @@
 				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn7.webp'; ?>" alt="" class="portfolio-section__photo">
 				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn8.webp'; ?>" alt="" class="portfolio-section__photo">
 			</div>
-
 		</section>
-		<section class="portfolio-section portfolio-event">
+
+		<section class="portfolio-section" id="portfolio-event">
 			<h2 class="portfolio-section__title">traditional event</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event1.webp'; ?>" alt="" class="portfolio-section__photo">
@@ -71,9 +71,9 @@
 				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event7.webp'; ?>" alt="" class="portfolio-section__photo">
 				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event8.webp'; ?>" alt="" class="portfolio-section__photo">
 			</div>
-
 		</section>
-		<section class="portfolio-section portfolio-pofile">
+
+		<section class="portfolio-section" id="portfolio-profile">
 			<h2 class="portfolio-section__title">profile</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile1.webp'; ?>" alt="" class="portfolio-section__photo">
@@ -85,9 +85,9 @@
 				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile7.webp'; ?>" alt="" class="portfolio-section__photo">
 				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile8.webp'; ?>" alt="" class="portfolio-section__photo">
 			</div>
-
 		</section>
-		<section class="portfolio-section portfolio-other">
+
+		<section class="portfolio-section" id="portfolio-other">
 			<h2 class="portfolio-section__title">other</h2>
 			<div class="portfolio-section__food">
 				<h3 class="portfolio-section__subtitle">food</h3>

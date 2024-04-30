@@ -1,6 +1,50 @@
 @use '../mixins' as *;
 
+.service {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(6.25rem, 2.977rem + 16.36vw, 15.25rem);
+
+  &__title {
+    justify-self: center;
+    padding: clamp(2rem, 1.273rem + 3.64vw, 4rem) 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+  }
+
+  &__en {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+    text-transform: capitalize;
+    line-height: 1;
+    justify-self: center;
+  }
+
+  &__jp {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+    line-height: 1;
+    justify-self: center;
+    color: var(--color-primary);
+  }
+}
+
 .plan {
+  &__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    justify-self: center;
+    gap: clamp(2rem, 1.273rem + 3.64vw, 4rem) clamp(0rem, -0.727rem + 3.64vw, 2rem);
+  }
+
   &__header {
     grid-column: 1 / -1;
     margin-top: 120px;
@@ -11,19 +55,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     gap: 1rem;
-  }
-
-  &__content {
-    grid-column: 2;
-    width: 100%;
-    margin-top: clamp(4rem, 1.091rem + 14.55vw, 12rem);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-self: center;
-    justify-self: center;
-    gap: clamp(1.2rem, 0.727rem + 2.36vw, 2.5rem) clamp(0rem, -0.727rem + 3.64vw, 2rem);
-    // row-gap: clamp(4rem, 1.091rem + 14.55vw, 12rem);
-    // column-gap: clamp(0rem, -0.727rem + 3.64vw, 2rem);
   }
 
   &__container {
@@ -100,7 +131,7 @@
 
   &__price {
     font-family: var(--font-primary);
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 0.709rem + 1.45vw, 1.8rem);
     font-weight: 600;
     letter-spacing: 0.1em;
     color: var(--color-primary);
@@ -118,12 +149,19 @@
 
   &__point {
     justify-self: center;
+
     > li {
       font-family: var(--font-primary);
-      font-size: clamp(0.9rem, 0.755rem + 0.73vw, 1.3rem);
+      font-size: clamp(0.7rem, 0.482rem + 1.09vw, 1.3rem);
       font-weight: 600;
       letter-spacing: 0.1em;
       color: var(--color-primary);
+
+      > span {
+        font-size: clamp(0.7rem, 0.591rem + 0.55vw, 1rem);
+        font-weight: 300;
+        padding-right: clamp(1rem, 0.709rem + 1.45vw, 1.8rem);
+      }
     }
   }
 
@@ -187,8 +225,6 @@
 }
 
 .process {
-  grid-column: 2;
-
   &__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -227,5 +263,50 @@
 }
 
 .policy {
-  grid-column: 2;
+  &__container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(2rem, 1.273rem + 3.64vw, 4rem);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+    justify-self: start;
+  }
+
+  &__discription {
+    font-family: var(--font-primary);
+    font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    color: var(--color-primary);
+  }
+
+  &__table {
+    width: clamp(18.75rem, 14.205rem + 22.73vw, 31.25rem);
+    text-align: center;
+    border-collapse: collapse;
+
+    th,
+    td {
+      width: 50%;
+      border: 1px solid var(--color-primary);
+      font-family: var(--font-primary);
+      font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+      letter-spacing: 0.1em;
+      line-height: 2;
+    }
+
+    th {
+      background-color: var(--color-primary);
+      color: #fff;
+    }
+
+    td {
+      color: var(--color-primary);
+    }
+  }
 }

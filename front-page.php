@@ -59,30 +59,44 @@
 		<section class="portfolio" id="portfolio">
 			<header class="banner common-banner section-title portfolio__title">portfolio</header>
 			<div class="portfolio__container">
-				<div class="works-card portfolio__family">
-					<h3 class="works-card__title">family</h3>
-					<img src="<?= get_template_directory_uri() . '/assets/img/family-thumbnail.png'; ?>" alt="ファミリーフォトのサムネイル">
-				</div>
-				<div class="works-card portfolio__wedding">
-					<h3 class="works-card__title">wedding</h3>
-					<img src="<?= get_template_directory_uri() . '/assets/img/wedding-thumbnail.png'; ?>" alt="ウェディングフォトのサムネイル">
-				</div>
-				<div class="works-card portfolio__maternity">
-					<h3 class="works-card__title">maternity</h3>
-					<img src="<?= get_template_directory_uri() . '/assets/img/maternity-thumbnail.png'; ?>" alt="マタニティフォトのサムネイル">
-				</div>
-				<div class="works-card portfolio__newborn">
-					<h3 class="works-card__title">newborn</h3>
-					<img src="<?= get_template_directory_uri() . '/assets/img/newborn-thumbnail.png'; ?>" alt="ニューボーンフォトのサムネイル">
-				</div>
-				<div class="works-card portfolio__event">
-					<h3 class="works-card__title">traditional<br>event</h3>
-					<img src="<?= get_template_directory_uri() . '/assets/img/event-thumbnail.png'; ?>" alt="イベントフォトのサムネイル">
-				</div>
-				<div class="works-card portfolio__profile">
-					<h3 class="works-card__title">profile</h3>
-					<img src="<?= get_template_directory_uri() . '/assets/img/profile-thumbnail.png'; ?>" alt="プロフィールフォトのサムネイル">
-				</div>
+				<?php
+				$target_page_url = "page-portfolio.php";
+				?>
+				<a href="<?= $target_page_url ?>#portfolio-family">
+					<div class="works-card portfolio__family">
+						<h3 class="works-card__title">family</h3>
+						<img src="<?= get_template_directory_uri() . '/assets/img/family-thumbnail.png'; ?>" alt="ファミリーフォトのサムネイル">
+					</div>
+				</a>
+				<a href="<?= $target_page_url ?>#portfolio-wedding">
+					<div class="works-card portfolio__wedding">
+						<h3 class="works-card__title">wedding</h3>
+						<img src="<?= get_template_directory_uri() . '/assets/img/wedding-thumbnail.png'; ?>" alt="ウェディングフォトのサムネイル">
+					</div>
+				</a>
+				<a href="<?= $target_page_url ?>#portfolio-maternty">
+					<div class="works-card portfolio__maternity">
+						<h3 class="works-card__title">maternity</h3>
+						<img src="<?= get_template_directory_uri() . '/assets/img/maternity-thumbnail.png'; ?>" alt="マタニティフォトのサムネイル">
+					</div>
+				</a>
+				<a href="<?= $target_page_url ?>#portfolio-newborn">
+					<div class="works-card portfolio__newborn">
+						<h3 class="works-card__title">newborn</h3>
+						<img src="<?= get_template_directory_uri() . '/assets/img/newborn-thumbnail.png'; ?>" alt="ニューボーンフォトのサムネイル">
+					</div>
+				</a>
+				<a href="<?= $target_page_url ?>#pportfolio-event">
+					<div class="works-card portfolio__event">
+						<h3 class="works-card__title">traditional<br>event</h3>
+						<img src="<?= get_template_directory_uri() . '/assets/img/event-thumbnail.png'; ?>" alt="イベントフォトのサムネイル">
+					</div>
+				</a>
+				<a href="<?= $target_page_url ?>#portfolio-profile">
+					<div class="works-card portfolio__profile">
+						<h3 class="works-card__title">profile</h3>
+						<img src="<?= get_template_directory_uri() . '/assets/img/profile-thumbnail.png'; ?>" alt="プロフィールフォトのサムネイル">
+					</div>
 			</div>
 		</section>
 		<!-- /.portfolio -->
