@@ -31,7 +31,7 @@
 				?>
 			</ul>
 			<div class="button-container news__button">
-				<button class="button">more</button>
+				<a href="/news/" class="button">more</a>
 			</div>
 		</section>
 		<!-- /.news -->
@@ -50,7 +50,7 @@
 				<p class="about__origin">1993年生まれ。東京都出身。</p>
 			</div>
 			<div class="button-container about__button">
-				<button class="button">more</button>
+				<a href="/about/" class="button">more</a>
 			</div>
 		</section>
 		<!-- /.about -->
@@ -65,37 +65,37 @@
 				<a href="<?= $target_page_url ?>#portfolio-family">
 					<div class="works-card portfolio__family">
 						<h3 class="works-card__title">family</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/family-thumbnail.png'; ?>" alt="ファミリーフォトのサムネイル">
+						<img src="<?= get_template_directory_uri() . '/assets/img/family/family1.webp'; ?>" alt="ファミリーフォトのサムネイル">
 					</div>
 				</a>
 				<a href="<?= $target_page_url ?>#portfolio-wedding">
 					<div class="works-card portfolio__wedding">
 						<h3 class="works-card__title">wedding</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/wedding-thumbnail.png'; ?>" alt="ウェディングフォトのサムネイル">
+						<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding5.webp'; ?>" alt="ウェディングフォトのサムネイル">
 					</div>
 				</a>
 				<a href="<?= $target_page_url ?>#portfolio-maternty">
 					<div class="works-card portfolio__maternity">
 						<h3 class="works-card__title">maternity</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/maternity-thumbnail.png'; ?>" alt="マタニティフォトのサムネイル">
+						<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp';  ?>" alt="マタニティフォトのサムネイル">
 					</div>
 				</a>
 				<a href="<?= $target_page_url ?>#portfolio-newborn">
 					<div class="works-card portfolio__newborn">
 						<h3 class="works-card__title">newborn</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/newborn-thumbnail.png'; ?>" alt="ニューボーンフォトのサムネイル">
+						<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn1.webp'; ?>" alt="ニューボーンフォトのサムネイル">
 					</div>
 				</a>
-				<a href="<?= $target_page_url ?>#pportfolio-event">
+				<a href="<?= $target_page_url ?>#portfolio-event">
 					<div class="works-card portfolio__event">
 						<h3 class="works-card__title">traditional<br>event</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/event-thumbnail.png'; ?>" alt="イベントフォトのサムネイル">
+						<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event2.webp'; ?>" alt="イベントフォトのサムネイル">
 					</div>
 				</a>
 				<a href="<?= $target_page_url ?>#portfolio-profile">
 					<div class="works-card portfolio__profile">
 						<h3 class="works-card__title">profile</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/profile-thumbnail.png'; ?>" alt="プロフィールフォトのサムネイル">
+						<img src="<?= get_template_directory_uri() .  '/assets/img/profile/profile2.webp'; ?>" alt="プロフィールフォトのサムネイル">
 					</div>
 			</div>
 		</section>
@@ -108,14 +108,14 @@
 				<p class="plan__desc">３つの撮影プランをご用意しました。
 					撮影日までの流れもこちらをご覧ください</p>
 				<div class="button-container plan__button">
-					<button class="button">more details</button>
+					<a href="/plan/" class="button">more details</a>
 				</div>
 			</section>
 			<section class="contact" id="contact">
 				<p class="contact__text">撮影に関するご依頼や、<br>
 					お仕事のご相談はこちらから</p>
 				<div class="button-container contact__button">
-					<button class="button-color">contact</button>
+					<a href="/contact/" class="button-color">contact</a>
 				</div>
 			</section>
 		</div>

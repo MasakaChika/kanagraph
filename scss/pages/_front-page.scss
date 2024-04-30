@@ -217,11 +217,23 @@
     font-size: clamp(0.8rem, 0.364rem + 2.18vw, 2rem);
     letter-spacing: 0.1em;
     text-transform: capitalize;
+    color: var(--color-primary);
   }
 
   img {
     width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover {
+    img {
+      opacity: 1;
+    }
   }
 }
 
