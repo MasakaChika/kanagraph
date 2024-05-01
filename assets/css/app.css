@@ -99,7 +99,7 @@ main {
   content: ">";
   position: absolute;
   top: 50%;
-  right: 2rem;
+  right: clamp(0.8rem, 0.364rem + 2.18vw, 2rem);
   transform: translateY(-50%);
 }
 
@@ -368,6 +368,10 @@ main {
 @media (max-width: 768px) {
   .site-header {
     height: 80px;
+    grid-template-columns: 1rem auto 1.5rem;
+  }
+  .site-header__container {
+    max-width: 95%;
   }
   .site-nav {
     width: 100%;
@@ -382,13 +386,16 @@ main {
 }
 @media (max-width: 768px) {
   .main-visual {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 }
 
 .main-content {
   grid-column: 2;
   grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: clamp(6.25rem, -6.064rem + 24.75vw, 12.5rem);
 }
 
 .news {
@@ -404,12 +411,6 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
-@media (max-width: 768px) {
-  .news__article {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
 }
 .news__article-card {
   display: grid;
@@ -434,6 +435,20 @@ main {
   letter-spacing: 0.1em;
   font-weight: 300;
   text-align: start;
+}
+@media (max-width: 768px) {
+  .news__article {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+  .news__article img {
+    margin-bottom: 0.2rem;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+  }
+  .news__article h2 {
+    text-align: center;
+  }
 }
 .news__button {
   grid-row: 3;
@@ -567,7 +582,7 @@ main {
   transform: translate(-50%, -50%);
   font-family: var(--font-title-en);
   font-weight: 300;
-  font-size: clamp(0.8rem, 0.364rem + 2.18vw, 2rem);
+  font-size: clamp(1.2rem, 0.909rem + 1.45vw, 2rem);
   letter-spacing: 0.1em;
   text-transform: capitalize;
   color: var(--color-primary);
@@ -684,6 +699,14 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+@media (max-width: 768px) {
+  .archive-news {
+    margin-top: 40px;
+  }
+  .archive-news__article {
+    grid-template-columns: 1fr;
+  }
+}
 
 .page-about {
   grid-column: 1/-1;
@@ -748,6 +771,11 @@ main {
   grid-row: 2;
   font-size: clamp(0.75rem, 0.514rem + 1.18vw, 1.4rem);
 }
+@media (max-width: 768px) {
+  .page-about {
+    margin-top: 40px;
+  }
+}
 
 .concept {
   grid-column: 1/-1;
@@ -801,15 +829,20 @@ main {
 .page-portfolio > section {
   grid-column: 2;
 }
+@media (max-width: 768px) {
+  .page-portfolio {
+    margin-top: 40px;
+  }
+}
 
 .portfolio-section {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: clamp(2rem, 1.273rem + 3.64vw, 4rem);
+  row-gap: clamp(0.5rem, -0.773rem + 6.36vw, 4rem);
 }
 .portfolio-section__title {
   font-family: var(--font-title-en);
-  font-size: 3rem;
+  font-size: clamp(1.2rem, 0.545rem + 3.27vw, 3rem);
   color: var(--color-primary);
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -823,8 +856,13 @@ main {
   grid-template-rows: repeat(2, auto);
   gap: 0;
 }
+@media (max-width: 768px) {
+  .portfolio-section__container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
 .portfolio-section__photo {
-  width: clamp(10rem, 6.364rem + 18.18vw, 20rem);
+  width: 100%;
   height: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -853,6 +891,14 @@ main {
   width: 100%;
   height: auto;
   align-self: center;
+}
+@media (max-width: 768px) {
+  .portfolio-section__food {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-section__food-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .service {
@@ -1127,7 +1173,7 @@ main {
 /* ------- header ------- */
 .site-footer {
   width: 100%;
-  margin-top: 360px;
+  margin-top: clamp(6.25rem, -25.767rem + 64.36vw, 22.5rem);
   background-image: url("../../assets/img/footer.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1162,6 +1208,11 @@ main {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .site-footer__nav {
+    display: none;
+  }
+}
 .site-footer__logo {
   grid-row: 2;
   width: auto;
@@ -1182,4 +1233,9 @@ main {
   font-weight: 300;
   letter-spacing: 0.1em;
   text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .site-footer__copyright small {
+    font-size: 0.6rem;
+  }
 }/*# sourceMappingURL=app.css.map */

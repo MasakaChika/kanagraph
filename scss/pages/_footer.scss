@@ -3,7 +3,7 @@
 .site-footer {
   width: 100%; // 幅100%
   // height: auto; // 高さ120px
-  margin-top: 360px;
+  margin-top: clamp(6.25rem, -25.767rem + 64.36vw, 22.5rem);
   background-image: url('../../assets/img/footer.webp');
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,6 +25,7 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   &__nav {
     grid-row: 1;
     display: grid;
@@ -40,7 +41,12 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
+
+    @include mq {
+      display: none;
+    }
   }
+
   &__logo {
     grid-row: 2;
     width: auto;
@@ -63,6 +69,10 @@
       font-weight: 300;
       letter-spacing: 0.1em;
       text-transform: capitalize;
+
+      @include mq {
+        font-size: 0.6rem;
+      }
     }
   }
 }

@@ -90,7 +90,7 @@ main {
     content: '>';
     position: absolute;
     top: 50%;
-    right: 2rem;
+    right: clamp(0.8rem, 0.364rem + 2.18vw, 2rem);
     transform: translateY(-50%);
   }
 }

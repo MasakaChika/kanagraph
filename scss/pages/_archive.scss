@@ -24,4 +24,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
+
+  @include mq {
+    margin-top: 40px;
+
+    &__article {
+      grid-template-columns: 1fr;
+    }
+  }
 }

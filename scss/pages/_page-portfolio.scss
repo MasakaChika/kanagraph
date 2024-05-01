@@ -18,16 +18,20 @@
   > section {
     grid-column: 2;
   }
+
+  @include mq {
+    margin-top: 40px;
+  }
 }
 
 .portfolio-section {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: clamp(2rem, 1.273rem + 3.64vw, 4rem);
+  row-gap: clamp(0.5rem, -0.773rem + 6.36vw, 4rem);
 
   &__title {
     font-family: var(--font-title-en);
-    font-size: 3rem;
+    font-size: clamp(1.2rem, 0.545rem + 3.27vw, 3rem);
     color: var(--color-primary);
     font-weight: 300;
     letter-spacing: 0.1em;
@@ -41,10 +45,14 @@
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
     gap: 0;
+
+    @include mq {
+      grid-template-columns: repeat(2, auto);
+    }
   }
 
   &__photo {
-    width: clamp(10rem, 6.364rem + 18.18vw, 20rem);
+    width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -75,6 +83,14 @@
         width: 100%;
         height: auto;
         align-self: center;
+      }
+    }
+
+    @include mq {
+      grid-template-columns: 1fr;
+
+      &-container {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }

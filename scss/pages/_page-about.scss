@@ -74,6 +74,10 @@
     grid-row: 2;
     font-size: clamp(0.75rem, 0.514rem + 1.18vw, 1.4rem);
   }
+
+  @include mq {
+    margin-top: 40px;
+  }
 }
 
 .concept {
