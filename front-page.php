@@ -97,24 +97,25 @@
 						<h3 class="works-card__title">profile</h3>
 						<img src="<?= get_template_directory_uri() .  '/assets/img/profile/profile2.webp'; ?>" alt="プロフィールフォトのサムネイル">
 					</div>
+				</a>
 			</div>
 		</section>
 		<!-- /.portfolio -->
 
 		<!-- plan&contact -->
 		<div class="plan-contact">
-			<section class="plan" id="plan">
-				<header class="banner common-banner section-title plan__title">plan</header>
-				<p class="plan__desc">３つの撮影プランをご用意しました。
+			<section class="frontpage-plan" id="plan">
+				<header class="banner common-banner section-title frontpage-plan__title">plan</header>
+				<p class="frontpage-plan__desc">３つの撮影プランをご用意しました。
 					撮影日までの流れもこちらをご覧ください</p>
-				<div class="button-container plan__button">
+				<div class="button-container frontpage-plan__button">
 					<a href="/plan/" class="button">more details</a>
 				</div>
 			</section>
-			<section class="contact" id="contact">
-				<p class="contact__text">撮影に関するご依頼や、<br>
+			<section class="frontpage-contact" id="contact">
+				<p class="frontpage-contact__text">撮影に関するご依頼や、<br>
 					お仕事のご相談はこちらから</p>
-				<div class="button-container contact__button">
+				<div class="button-container frontpage-contact__button">
 					<a href="/contact/" class="button-color">contact</a>
 				</div>
 			</section>

@@ -4,6 +4,7 @@
   grid-column: 1 / -1;
   width: 100%;
   height: auto;
+
   @include mq {
     margin-top: 80px;
   }
@@ -35,10 +36,9 @@
   }
 
   &__article-card {
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 
     img {
       margin-bottom: 1rem;
@@ -49,6 +49,14 @@
     h2 {
       font-family: var(--text-primary);
       font-size: 0.875rem;
+      letter-spacing: 0.1em;
+      font-weight: 300;
+      text-align: start;
+    }
+
+    span {
+      font-family: var(--text-primary);
+      font-size: 0.6rem;
       letter-spacing: 0.1em;
       font-weight: 300;
       text-align: start;
@@ -243,7 +251,7 @@
   row-gap: clamp(6.25rem, 3.977rem + 11.36vw, 12.5rem);
 }
 
-.plan {
+.frontpage-plan {
   display: grid;
   grid-template-columns: 1fr;
   align-self: center;
@@ -261,7 +269,7 @@
   }
 }
 
-.contact {
+.frontpage-contact {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: clamp(0.5rem, 0.245rem + 1.27vw, 1.2rem);

@@ -1,0 +1,27 @@
+@use '../mixins' as *;
+
+.archive-news {
+  grid-column: 1/ -1;
+  width: 100%;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 980px) minmax(2rem, 1fr);
+  align-self: center;
+  justify-self: center;
+  padding-bottom: clamp(3rem, -7.195rem + 42.93vw, 25rem);
+
+  &__header {
+    grid-column: 1 / -1;
+  }
+
+  &__container {
+    grid-column: 2;
+    padding-top: clamp(3rem, 1.545rem + 7.27vw, 7rem);
+  }
+
+  &__article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}

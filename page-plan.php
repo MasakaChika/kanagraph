@@ -17,7 +17,7 @@
 								<span class="plan__jp">ライトプラン</span>
 							</header>
 						</div>
-						<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn2.webp'; ?>" alt="" class=" portfolio-section__photo plan__photo">
+						<img src="<?= get_template_directory_uri() . '/assets/img/family/family4.webp'; ?>" alt="家族写真" class=" portfolio-section__photo plan__photo">
 					</div>
 					<div class="plan__introduction">
 						<p class="plan__desc">プロフィール撮影や<br>日常の何気ないシーンを残したい方に</p>
@@ -36,7 +36,7 @@
 								<span class="plan__jp">レギュラープラン</span>
 							</header>
 						</div>
-						<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn2.webp'; ?>" alt="" class=" portfolio-section__photo plan__photo">
+						<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event8.webp'; ?>" alt="七五三の写真" class=" portfolio-section__photo plan__photo">
 					</div>
 					<div class="plan__introduction">
 						<p class="plan__desc">お宮参り、七五三、バースデーなど<br>節目のお祝いでたっぷり記録を残したい方に</p>
@@ -55,7 +55,7 @@
 								<span class="plan__jp">プレミアムプラン</span>
 							</header>
 						</div>
-						<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn2.webp'; ?>" alt="" class=" portfolio-section__photo plan__photo">
+						<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding2.webp'; ?>" alt="" class=" portfolio-section__photo plan__photo">
 					</div>
 					<div class="plan__introduction">
 						<p class="plan__desc">ウェデイングや公園とお家の両方でファミリーフォトを撮りたい方におすすめ</p>

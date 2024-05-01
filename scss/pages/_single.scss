@@ -1,0 +1,48 @@
+@use '../mixins' as *;
+
+.post {
+  grid-column: 2;
+  width: 100%;
+  margin-top: 120px;
+
+  &__heading {
+    letter-spacing: 0.1em;
+    font-size: clamp(1rem, 0.6364rem + 1.8182vw, 2rem);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 0.818rem + 0.909vw, 1.5rem);
+    > time {
+      font-family: var(--font-primary);
+      color: var(--color-primary);
+      letter-spacing: 0.1em;
+    }
+  }
+
+  &__news {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 0.818rem + 0.909vw, 1.5rem);
+  }
+}
+
+.prev-next {
+  margin-top: clamp(6.25rem, 3.977rem + 11.364vw, 12.5rem);
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__item {
+    svg {
+      height: 1rem;
+      width: auto;
+    }
+  }
+}
