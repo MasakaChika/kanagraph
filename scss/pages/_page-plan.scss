@@ -25,29 +25,34 @@
   }
 
   &__jp {
-    font-family: var(--font-primary);
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
     line-height: 1;
     justify-self: center;
-    color: var(--color-primary);
   }
 }
 
 .plan {
+  grid-column: 1/ -1;
+  width: 100%;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 1280px) minmax(2rem, 1fr);
+
   &__content {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-self: center;
     justify-self: center;
-    gap: clamp(2rem, 1.273rem + 3.64vw, 4rem) clamp(0rem, -0.727rem + 3.64vw, 2rem);
+    gap: clamp(2rem, 1.273rem + 3.64vw, 4rem) clamp(3rem, 2.273rem + 3.64vw, 5rem);
+
+    @include mq {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__header {
     grid-column: 1 / -1;
-    margin-top: 120px;
+    z-index: 1;
   }
 
   &__section {
@@ -58,18 +63,21 @@
   }
 
   &__container {
-    height: clamp(18rem, -5.821rem + 47.76vw, 30rem);
     position: relative;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    width: 100%;
   }
 
   &__wrapper {
+    margin-bottom: 0;
+    justify-self: center;
     width: clamp(9.375rem, 8.239rem + 5.68vw, 12.5rem);
-    height: clamp(8.75rem, 7.545rem + 6.02vw, 12.063rem);
-
+    height: clamp(4.375rem, 3.761rem + 3.07vw, 6.063rem);
+    border-radius: 100px 100px 0 0;
     border: 1px solid var(--color-primary);
-    border-radius: 50%;
+    border-bottom: none;
     position: relative;
     display: flex;
     justify-content: center;
@@ -77,7 +85,7 @@
 
   &__title-area {
     position: absolute;
-    top: 28%;
+    top: 43%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
@@ -85,81 +93,54 @@
   }
 
   &__cat {
-    font-family: var(--font-primary);
-    font-weight: 300;
     letter-spacing: 0.05em;
-    font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
     text-transform: capitalize;
     line-height: 1;
     justify-self: center;
   }
 
   &__jp {
-    font-family: var(--font-primary);
-    font-size: clamp(0.75rem, 0.705rem + 0.23vw, 0.875rem);
-    letter-spacing: 0.1em;
-    color: var(--color-primary);
     justify-self: center;
   }
 
   &__photo {
-    position: absolute;
-    width: 90%;
+    width: 100%;
+    justify-self: center;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
-    transform: translateY(43%);
   }
 
   &__introduction {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto;
-    gap: 1rem;
-    padding: 0 clamp(1rem, 0.636rem + 1.82vw, 2rem);
+    gap: clamp(1rem, 0.636rem + 1.82vw, 2rem);
   }
 
   &__desc {
-    font-family: var(--font-primary);
-    font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-    letter-spacing: 0.1em;
     line-height: 1.4;
-    color: var(--color-primary);
-
     justify-self: start;
   }
 
   &__price {
-    font-family: var(--font-primary);
-    font-size: clamp(1rem, 0.709rem + 1.45vw, 1.8rem);
+    letter-spacing: 0.12em;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--color-primary);
-
+    line-height: 1;
     justify-self: center;
   }
 
   &__tax {
-    font-family: var(--font-primary);
-    font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--color-primary);
   }
 
   &__point {
     justify-self: center;
 
     > li {
-      font-family: var(--font-primary);
-      font-size: clamp(0.7rem, 0.482rem + 1.09vw, 1.3rem);
       font-weight: 600;
-      letter-spacing: 0.1em;
-      color: var(--color-primary);
 
       > span {
-        font-size: clamp(0.7rem, 0.591rem + 0.55vw, 1rem);
-        font-weight: 300;
         padding-right: clamp(1rem, 0.709rem + 1.45vw, 1.8rem);
       }
     }
@@ -173,11 +154,7 @@
     border-radius: 1rem;
     > p,
     > ul > li {
-      font-family: var(--font-primary);
-      font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-      letter-spacing: 0.1em;
       line-height: 1.6;
-      color: var(--color-primary);
     }
     p {
       font-weight: 600;
@@ -189,23 +166,38 @@
     grid-row: 2;
 
     > h3 {
-      font-family: var(--font-primary);
-      font-size: clamp(0.9rem, 0.755rem + 0.73vw, 1.3rem);
       font-weight: 600;
-      letter-spacing: 0.1em;
-      color: var(--color-primary);
       text-transform: capitalize;
     }
     &-price {
-      font-family: var(--font-primary);
-      font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-      letter-spacing: 0.1em;
       line-height: 1.6;
-      color: var(--color-primary);
 
       > span {
         font-size: 0.7rem;
       }
+    }
+  }
+
+  @include mq {
+    &__content {
+      grid-template-columns: 1fr;
+      gap: clamp(3.125rem, 0.898rem + 11.14vw, 6.25rem) 0;
+    }
+    &__light {
+      grid-row: 1;
+    }
+    &__regular {
+      grid-row: 2;
+    }
+    &__premium {
+      grid-row: 3;
+    }
+    &__common {
+      grid-row: 4;
+    }
+    &__option {
+      grid-column: 1;
+      grid-row: 5;
     }
   }
 }
@@ -216,11 +208,7 @@
   background: var(--header-gradation);
   align-content: center;
   padding-left: 5%;
-
-  font-family: var(--font-primary);
-  font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
   color: #fff;
 }
 
@@ -229,6 +217,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+
+    @include mq {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__step {
@@ -237,9 +229,7 @@
     grid-template-rows: auto 1fr 0.5fr;
 
     &-number {
-      font-family: var(--font-primary);
       font-size: clamp(2rem, 1.273rem + 3.64vw, 4rem);
-      color: var(--color-primary);
       padding-top: 24px;
       line-height: 1;
     }
@@ -253,11 +243,11 @@
     }
 
     > p {
-      font-family: var(--font-primary);
-      font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-      letter-spacing: 0.1em;
       line-height: 1.6;
-      color: var(--color-primary);
+    }
+
+    @include mq {
+      grid-template-rows: auto;
     }
   }
 }
@@ -278,11 +268,7 @@
   }
 
   &__discription {
-    font-family: var(--font-primary);
-    font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-    letter-spacing: 0.1em;
     line-height: 1.6;
-    color: var(--color-primary);
   }
 
   &__table {
@@ -294,19 +280,12 @@
     td {
       width: 50%;
       border: 1px solid var(--color-primary);
-      font-family: var(--font-primary);
-      font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-      letter-spacing: 0.1em;
       line-height: 2;
     }
 
     th {
       background-color: var(--color-primary);
       color: #fff;
-    }
-
-    td {
-      color: var(--color-primary);
     }
   }
 }

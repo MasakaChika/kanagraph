@@ -17,6 +17,8 @@ img {
 body {
   font-family: var(--font-primary);
   background: var(--color-background);
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
 }
 
 html {
@@ -28,13 +30,9 @@ main {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-p,
 a {
-  color: var(--color-primary);
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 ul,
@@ -76,11 +74,8 @@ main {
   font-family: var(--font-title-en);
   font-size: 1.25rem;
   font-weight: 300;
-  letter-spacing: 0.1em;
-  border: none;
   border-radius: 10px;
   border: 1px solid var(--color-primary);
-  color: var(--color-primary);
   background-color: #fff;
   cursor: pointer;
   position: relative;
@@ -112,51 +107,14 @@ main {
   line-height: 3.5rem;
 }
 
-.section-header {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-family: var(--font-title-en);
-  color: var(--color-primary);
-  font-size: 4rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  text-transform: capitalize;
-}
-
-.page-header {
-  width: 100%;
-  height: clamp(7.5rem, -0.61rem + 34.15vw, 25rem);
-  background-color: #ddb5db;
-  font-size: clamp(2.5rem, 0.878rem + 6.83vw, 6rem);
-  font-family: var(--font-title-en);
-  color: var(--color-primary);
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
 .banner {
+  grid-column: 1 / -1;
   height: clamp(7.5rem, -0.61rem + 34.15vw, 25rem); //共通の高さ
   width: 100%;
-}
-
-.common-banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--font-title-en);
-  color: var(--color-primary);
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  font-size: clamp(2.5rem, 0.878rem + 6.83vw, 6rem);
-  text-transform: capitalize;
+  color: #fff;
 }
 
 .banner-type1 {
@@ -174,14 +132,17 @@ main {
 .banner-type1,
 .banner-type2,
 .banner-type3 {
-  color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.section-title {
-  display: flex;
-  justify-content: center;
-  align-items: end;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

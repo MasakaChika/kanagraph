@@ -25,6 +25,8 @@
 
   &__title {
     grid-row: 1;
+    align-items: end;
+    color: var(--color-primary);
   }
 
   &__article {
@@ -45,10 +47,6 @@
       }
 
       h2 {
-        font-family: var(--text-primary);
-        font-size: 0.875rem;
-        letter-spacing: 0.1em;
-        font-weight: 300;
         text-align: start;
       }
 
@@ -91,6 +89,8 @@
 
   &__title {
     grid-row: 1;
+    align-items: end;
+    color: var(--color-primary);
   }
 
   &__photo {
@@ -120,19 +120,19 @@
   &__english-name {
     font-family: var(--font-primary);
     font-weight: 300;
-    font-size: 0.9375rem;
+    font-size: clamp(0.6rem, 0.477rem + 0.61vw, 0.938rem);
     letter-spacing: 0.1em;
   }
 
   &__name {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
     font-weight: 300;
     letter-spacing: 0.1em;
   }
 
   &__origin {
     padding-top: 1.25rem;
-    font-size: 0.9375rem;
+    font-size: clamp(0.6rem, 0.477rem + 0.61vw, 0.938rem);
     font-weight: 300;
     letter-spacing: 0.1em;
   }
@@ -151,6 +151,8 @@
 
   &__title {
     grid-row: 1;
+    align-items: end;
+    color: var(--color-primary);
   }
 
   &__container {
@@ -235,12 +237,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: var(--font-title-en);
-    font-weight: 300;
-    font-size: clamp(1.2rem, 0.909rem + 1.45vw, 2rem);
-    letter-spacing: 0.1em;
-    text-transform: capitalize;
-    color: var(--color-primary);
+
+    @include mq {
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
   }
 
   img {
@@ -251,9 +252,15 @@
     object-position: center;
     opacity: 0.4;
     transition: opacity 0.5s ease;
+
+    @include mq {
+      opacity: 1;
+    }
   }
 
   &:hover {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     img {
       opacity: 1;
     }
@@ -271,6 +278,11 @@
   grid-template-columns: 1fr;
   align-self: center;
   row-gap: clamp(1rem, 0.273rem + 3.64vw, 3rem);
+
+  &__title {
+    align-items: end;
+    color: var(--color-primary);
+  }
 
   &__desc {
     justify-self: center;

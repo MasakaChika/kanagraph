@@ -9,12 +9,12 @@
 	<div class="main-content">
 		<!-- news -->
 		<section class="news" id="news">
-			<header class="banner common-banner section-title news__title">news</header>
+			<header class="banner news__title font__title--lg-en">news</header>
 			<ul class="news__article">
 				<?php
 				$args = array(
-					'post_type' => 'post',
-					'posts_per_page' => 3,
+					'post_type'      => 'post',
+					'posts_per_page' => wp_is_mobile() ? 2 : 3, // モバイルの場合は2件、それ以外（PC）の場合は3件
 				);
 				$query = new WP_Query($args);
 				if ($query->have_posts()) :
@@ -22,7 +22,7 @@
 						<li class="news__article-card">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail('thumbnail'); ?>
-								<h2><?php the_title(); ?></h2>
+								<h2 class="news__article-title font__body--sm"><?php the_title(); ?></h2>
 							</a>
 						</li>
 				<?php endwhile;
@@ -39,9 +39,9 @@
 
 		<!-- about -->
 		<section class="about" id="about">
-			<header class="banner common-banner section-title about__title">about</header>
+			<header class="banner about__title font__title--lg-en">about</header>
 			<div class="about__photo">
-				<img src="<?= get_template_directory_uri() . '/assets/img/portrait.webp'; ?>" alt="ポートレート">
+				<img src="<?= get_template_directory_uri() . '/assets/img/portrait.webp'; ?>" alt="村越香奈のポートレート写真">
 			</div>
 			<div class="about__introduction">
 				<span class="about__role">Photographer</span>
@@ -57,44 +57,44 @@
 
 		<!-- portfolio -->
 		<section class="portfolio" id="portfolio">
-			<header class="banner common-banner section-title portfolio__title">portfolio</header>
+			<header class="banner portfolio__title font__title--lg-en">portfolio</header>
 			<div class="portfolio__container">
 				<?php
 				$target_page_url = "page-portfolio.php";
 				?>
-				<a href="<?= $target_page_url ?>#portfolio-family">
+				<a href="/portfolio/#portfolio-family">
 					<div class="works-card portfolio__family">
-						<h3 class="works-card__title">family</h3>
+						<h3 class="works-card__title font__title--md-en">family</h3>
 						<img src="<?= get_template_directory_uri() . '/assets/img/family/family1.webp'; ?>" alt="ファミリーフォトのサムネイル">
 					</div>
 				</a>
-				<a href="<?= $target_page_url ?>#portfolio-wedding">
+				<a href="/portfolio/#portfolio-wedding">
 					<div class="works-card portfolio__wedding">
-						<h3 class="works-card__title">wedding</h3>
+						<h3 class="works-card__title font__title--md-en">wedding</h3>
 						<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding5.webp'; ?>" alt="ウェディングフォトのサムネイル">
 					</div>
 				</a>
-				<a href="<?= $target_page_url ?>#portfolio-maternty">
+				<a href="/portfolio/#portfolio-maternty">
 					<div class="works-card portfolio__maternity">
-						<h3 class="works-card__title">maternity</h3>
+						<h3 class="works-card__title font__title--md-en">maternity</h3>
 						<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp';  ?>" alt="マタニティフォトのサムネイル">
 					</div>
 				</a>
-				<a href="<?= $target_page_url ?>#portfolio-newborn">
+				<a href="/portfolio/#portfolio-newborn">
 					<div class="works-card portfolio__newborn">
-						<h3 class="works-card__title">newborn</h3>
+						<h3 class="works-card__title font__title--md-en">newborn</h3>
 						<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn1.webp'; ?>" alt="ニューボーンフォトのサムネイル">
 					</div>
 				</a>
-				<a href="<?= $target_page_url ?>#portfolio-event">
+				<a href="/portfolio/#portfolio-event">
 					<div class="works-card portfolio__event">
-						<h3 class="works-card__title">traditional<br>event</h3>
+						<h3 class="works-card__title font__title--md-en">traditional<br>event</h3>
 						<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event2.webp'; ?>" alt="イベントフォトのサムネイル">
 					</div>
 				</a>
-				<a href="<?= $target_page_url ?>#portfolio-profile">
+				<a href="/portfolio/#portfolio-profile">
 					<div class="works-card portfolio__profile">
-						<h3 class="works-card__title">profile</h3>
+						<h3 class="works-card__title font__title--md-en">profile</h3>
 						<img src="<?= get_template_directory_uri() .  '/assets/img/profile/profile2.webp'; ?>" alt="プロフィールフォトのサムネイル">
 					</div>
 				</a>
@@ -105,15 +105,15 @@
 		<!-- plan&contact -->
 		<div class="plan-contact">
 			<section class="frontpage-plan" id="plan">
-				<header class="banner common-banner section-title frontpage-plan__title">plan</header>
-				<p class="frontpage-plan__desc">３つの撮影プランをご用意しました。
+				<header class="banner frontpage-plan__title font__title--lg-en">plan</header>
+				<p class="frontpage-plan__desc font__body--md">３つの撮影プランをご用意しました。
 					撮影日までの流れもこちらをご覧ください</p>
 				<div class="button-container frontpage-plan__button">
 					<a href="/plan/" class="button">more details</a>
 				</div>
 			</section>
 			<section class="frontpage-contact" id="contact">
-				<p class="frontpage-contact__text">撮影に関するご依頼や、<br>
+				<p class="frontpage-contact__text font__body--md">撮影に関するご依頼や、<br>
 					お仕事のご相談はこちらから</p>
 				<div class="button-container frontpage-contact__button">
 					<a href="/contact/" class="button-color">contact</a>

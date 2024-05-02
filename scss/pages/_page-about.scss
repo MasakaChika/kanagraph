@@ -5,14 +5,16 @@
   width: 100%;
   margin-top: 120px;
   display: grid;
-  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 980px) minmax(2rem, 1fr);
+  grid-template-columns: var(--container-width);
   align-self: center;
   justify-self: center;
   padding-bottom: clamp(3rem, -7.195rem + 42.93vw, 25rem);
 
   &__header {
     grid-column: 1 / -1;
+    z-index: 1;
   }
+
   &__photo {
     padding-top: clamp(3rem, 1.545rem + 7.27vw, 7rem);
     grid-column: 2;
@@ -40,41 +42,31 @@
   }
 
   &__role,
-  &__name,
-  &__english-name,
-  &__desc {
-    font-family: var(--font-primary);
-    color: var(--color-primary);
-    font-weight: 200;
+  &__name {
     letter-spacing: 0.2em;
   }
 
   &__role {
     grid-column: 1;
     grid-row: 1;
-    font-size: clamp(0.75rem, 0.402rem + 1.46vw, 1.5rem);
-    letter-spacing: 0.1em;
-  }
-
-  &__english-name {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: clamp(0.75rem, 0.586rem + 0.82vw, 1.2rem);
-    align-self: self-end;
   }
 
   &__name {
     grid-column: 1;
     grid-row: 2;
-    font-size: clamp(1.125rem, 0.488rem + 2.68vw, 2.5rem);
+    align-self: self-end;
+  }
+
+  &__english-name {
+    grid-column: 1;
+    grid-row: 3;
     align-self: self-end;
   }
 
   &__desc {
     grid-row: 2;
-    font-size: clamp(0.75rem, 0.514rem + 1.18vw, 1.4rem);
+    line-height: 2;
   }
-
   @include mq {
     margin-top: 40px;
   }
@@ -84,7 +76,7 @@
   grid-column: 1/ -1;
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 980px) minmax(2rem, 1fr);
+  grid-template-columns: var(--container-width);
   align-self: center;
   justify-self: center;
   row-gap: clamp(3rem, 1.545rem + 7.27vw, 7rem);
@@ -92,6 +84,7 @@
   &__header {
     grid-column: 1/ -1;
     grid-row: 1;
+    z-index: 1;
   }
 
   &__content {
@@ -104,7 +97,7 @@
   }
 
   &__title {
-    font-size: clamp(1.25rem, -0.024rem + 5.37vw, 4rem);
+    font-size: clamp(1.25rem, 0.541rem + 3.55vw, 3.2rem);
     font-family: var(--font-primary);
     letter-spacing: 0.1em;
     font-weight: 300;
@@ -112,9 +105,7 @@
   }
 
   &__text {
-    font-size: clamp(0.75rem, 0.514rem + 1.18vw, 1.4rem);
-    font-family: var(--font-primary);
-    letter-spacing: 0.1em;
     text-align: center;
+    line-height: 1.5;
   }
 }

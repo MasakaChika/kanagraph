@@ -1,5 +1,4 @@
 @use '../mixins' as *;
-
 .page-portfolio {
   grid-column: 1/ -1;
   width: 100%;
@@ -11,8 +10,7 @@
   row-gap: clamp(4rem, 1.091rem + 14.55vw, 12rem);
 
   &__header {
-    grid-column: 1 / -1;
-    background-position: center bottom;
+    z-index: 1;
   }
 
   > section {
@@ -25,17 +23,12 @@
 }
 
 .portfolio-section {
+  scroll-margin-top: 120px;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: clamp(0.5rem, -0.773rem + 6.36vw, 4rem);
 
   &__title {
-    font-family: var(--font-title-en);
-    font-size: clamp(1.2rem, 0.545rem + 3.27vw, 3rem);
-    color: var(--color-primary);
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    text-transform: capitalize;
     justify-self: center;
   }
 
@@ -61,12 +54,6 @@
 
   &__subtitle {
     grid-column: 1 / -1;
-    font-family: var(--font-title-en);
-    font-size: 1.4rem;
-    color: var(--color-primary);
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    text-transform: capitalize;
   }
 
   &__food {

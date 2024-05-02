@@ -5,4 +5,5 @@
   --color-background: #ffffff;
   --header-gradation: linear-gradient(90deg, rgba(168, 129, 91, 1) 00%, rgba(246, 226, 207, 1) 100%);
   --color-primary: #a8815b;
+  --container-width: minmax(2rem, 1fr) minmax(auto, 980px) minmax(2rem, 1fr);
 }

@@ -2,17 +2,19 @@
 
 <main>
 	<section class="page-about">
-		<header class="banner common-banner banner-type1 page-about__header">about</header>
+		<header class="banner banner-type1">
+			<h2 class="page-about__header font__title--lg-en">About</h2>
+		</header>
 		<div class="page-about__photo">
 			<img src=<?= get_theme_file_uri('assets/img/portlate.png'); ?> alt="村越香奈が写っている写真" />
 		</div>
 		<div class="page-about__introduction">
 			<div class="page-about__profile">
-				<span class="page-about__role">Photographer</span>
-				<h2 class="page-about__name">村越 香奈</h2>
-				<span class="page-about__english-name">Kana Murakoshi</span>
+				<span class="page-about__role font__body--lg">Photographer</span>
+				<h2 class="page-about__name font__title--md-jp">村越 香奈</h2>
+				<span class="page-about__english-name font__body--xs">Kana Murakoshi</span>
 			</div>
-			<p class="page-about__desc">1993年生まれ。東京都出身。<br>
+			<p class="page-about__desc font__body--lg">1993年生まれ。東京都出身。<br>
 				立教大学現代心理学部映像身体学科卒業。<br>
 				2016年より株式会社NHKテクノロジーズに入社。<br>
 				報道番組の音声、撮影業務に携わる。<br>
@@ -22,10 +24,12 @@
 	</section>
 
 	<section class="concept">
-		<header class="banner common-banner banner-type3 concept__header">concept</header>
+		<header class="banner banner-type3">
+			<h2 class="concept__header font__title--lg-en">concept</h2>
+		</header>
 		<div class="concept__content">
 			<h2 class="concept__title">二度とない愛おしい瞬間を<br>一生モノの記憶へ</h2>
-			<p class="concept__text">誰もがかけがえのない存在であり、<br>
+			<p class="concept__text font__body--lg">誰もがかけがえのない存在であり、<br>
 				素敵だということを伝えられるような写真を<br>
 				目指しています。<br>
 				誰かと比較したりせず、<br>

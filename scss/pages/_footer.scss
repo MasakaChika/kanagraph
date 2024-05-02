@@ -1,13 +1,12 @@
 @use '../mixins' as *;
 /* ------- header ------- */
 .site-footer {
-  width: 100%; // 幅100%
-  // height: auto; // 高さ120px
+  width: 100%;
   margin-top: clamp(6.25rem, -25.767rem + 64.36vw, 22.5rem);
   background-image: url('../../assets/img/footer.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px -400px;
+  background-position: center;
   height: 200px;
 
   display: grid;
@@ -36,13 +35,15 @@
     li {
       width: auto;
       font-family: var(--font-title-en);
-      font-size: 0.875rem;
+      font-size: clamp(0.6rem, 0.5rem + 0.5vw, 0.875rem);
+      color: var(--color-primary);
       font-weight: 300;
       letter-spacing: 0.1em;
-      text-transform: uppercase;
+      text-transform: capitalize;
     }
-
-    @include mq {
+  }
+  @include mq {
+    &__nav > li {
       display: none;
     }
   }
@@ -64,15 +65,11 @@
 
     small {
       font-family: var(--font-title-en);
-      font-size: 0.875rem;
+      font-size: clamp(0.6rem, 0.5rem + 0.5vw, 0.875rem);
       color: var(--color-primary);
       font-weight: 300;
       letter-spacing: 0.1em;
       text-transform: capitalize;
-
-      @include mq {
-        font-size: 0.6rem;
-      }
     }
   }
 }
