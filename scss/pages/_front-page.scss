@@ -38,10 +38,9 @@
     &-card {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1rem;
 
       img {
-        margin-bottom: 1rem;
+        margin-bottom: 0.2rem;
         width: 100%;
         height: auto;
       }
@@ -51,10 +50,7 @@
       }
 
       span {
-        font-family: var(--text-primary);
-        font-size: 0.6rem;
-        letter-spacing: 0.1em;
-        font-weight: 300;
+        line-height: 1;
         text-align: start;
       }
     }

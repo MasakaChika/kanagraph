@@ -200,6 +200,10 @@
       grid-row: 5;
     }
   }
+
+  @include mq {
+    margin-top: 40px;
+  }
 }
 
 .plan-section-title {
