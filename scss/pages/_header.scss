@@ -39,9 +39,9 @@
     align-items: center;
   }
   &__gnav {
-    // display: grid;
-    // grid-template-columns: repeat(2, auto);
-    // gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
 
     ul {
       list-style: none;
@@ -70,7 +70,7 @@
   &__sns {
     display: grid;
     align-items: center;
-    grid-template-columns: auto; /* アイコンの幅に合わせる */
+    grid-template-columns: auto;
     // gap: 4rem;
     justify-self: flex-end;
     img {
@@ -130,9 +130,12 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 100%;
     height: 100vh;
-    background: var(--color-primary); // 背景色と透明度を設定
+    background-image: url('../../assets/img/footer.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     transform: translateX(100%); // 右側からスライドインするために初期位置を設定
     transition: transform 0.5s ease-in-out; // スムーズな表示切り替えのためのトランジション
 
@@ -142,30 +145,31 @@
   }
 
   .site-header {
+    height: 80px;
+    grid-template-columns: 1rem auto 1.5rem;
+
+    &__container {
+      width: 100%;
+    }
+
     &__nav-container {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, auto);
+      grid-template-rows: auto;
       row-gap: 0;
     }
 
     &__gnav {
       grid-column: 1;
-      grid-row: 1;
-      grid-template-columns: 1fr; // gridを1columnに指定
-      align-items: center;
+      grid-template-columns: 1fr;
       text-align: center;
+      align-self: end;
 
       ul {
         grid-template-columns: 1fr;
-        gap: 3.5rem; // 56px
-        justify-self: flex-start;
-
-        li {
-          a {
-            color: var(--color-background);
-          }
-        }
+        gap: clamp(1.5rem, 0.431rem + 5.35vw, 3rem);
+        justify-self: center;
+        width: 50%;
       }
     }
 
@@ -173,22 +177,36 @@
     &__sns {
       grid-column: 1;
       grid-row: 2;
-      grid-template-columns: minmax(1rem, 1fr) minmax(auto, 280px) minmax(1.5rem, 1fr);
-      gap: 3.5rem;
-      justify-self: flex-start;
+      gap: 1rem;
 
       img {
-        grid-column: 2;
-        grid-row: 1;
+        justify-self: center;
+        width: 40%;
+        height: auto;
         display: block;
       }
 
       a {
-        grid-column: 2;
-        grid-row: 2;
-        svg {
-          stroke: #fff;
-        }
+        justify-self: center;
+      }
+    }
+
+    #menu-item-20 {
+      display: block;
+      width: 100%;
+      height: 3.5rem;
+      font-family: var(--font-title-en);
+      font-size: 1.25rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      border: none;
+      border-radius: 10px;
+      border: 1px solid var(--color-primary);
+      background-color: rgba(168, 129, 91, 0.7);
+      cursor: pointer;
+      line-height: 3.5rem;
+      > a {
+        color: #fff;
       }
     }
   }
@@ -201,50 +219,21 @@
     &::before {
       top: 50%;
       transform: rotate(30deg);
-      background-color: var(--color-background);
     }
 
     &::after {
       top: 50%;
       transform: rotate(-30deg);
-      background-color: var(--color-background);
     }
   }
   .cls-1 {
     stroke: var(--color-background);
   }
 }
-
-@include mq {
-  .site-header {
-    height: 80px;
-    grid-template-columns: 1rem auto 1.5rem;
-
-    &__container {
-      max-width: 95%;
-    }
-  }
-  .site-nav {
-    width: 100%;
-    height: 100vh;
-  }
-}
 /* ------- /.hamburger menu ------- */
 
-// .site-header__nav {
-//   position: relative;
-// }
-// .current-menu-item > a::after {
-//   content: '';
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 2px; /* 下線の高さ */
-//   background-color: #ff0000; /* 下線の色 */
-// }
 .menu-item-underline {
   width: 100%;
   height: 1px;
-  background-color: var(--color-primary); /* 下線の色 */
+  background-color: var(--color-primary);
 }
