@@ -205,12 +205,25 @@
   position: relative;
   width: 100%;
   height: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+
+  > a {
+    transition: 0.4s linear;
+    &:hover {
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      img {
+        opacity: 1;
+      }
+    }
+  }
 
   &__title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 
     @include mq {
       color: #fff;
@@ -225,19 +238,7 @@
     object-fit: cover;
     object-position: center;
     opacity: 0.4;
-    transition: opacity 0.5s ease;
-
-    @include mq {
-      opacity: 1;
-    }
-  }
-
-  &:hover {
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    img {
-      opacity: 1;
-    }
+    transition: 0.4s opacity linear;
   }
 }
 

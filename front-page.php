@@ -62,42 +62,47 @@
 				<?php
 				$target_page_url = "page-portfolio.php";
 				?>
-				<a href="/portfolio/#portfolio-family">
-					<div class="works-card portfolio__family">
+				<div class="works-card portfolio__family">
+					<a href="/portfolio/#portfolio-family">
 						<h3 class="works-card__title font__title--md-en">family</h3>
 						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/family/family1.webp'; ?>" alt="ファミリーフォトのサムネイル">
-					</div>
-				</a>
-				<a href="/portfolio/#portfolio-wedding">
-					<div class="works-card portfolio__wedding">
+					</a>
+				</div>
+
+				<div class="works-card portfolio__wedding">
+					<a href="/portfolio/#portfolio-wedding">
 						<h3 class="works-card__title font__title--md-en">wedding</h3>
 						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding5.webp'; ?>" alt="ウェディングフォトのサムネイル">
-					</div>
-				</a>
-				<a href="/portfolio/#portfolio-maternty">
-					<div class="works-card portfolio__maternity">
+					</a>
+				</div>
+
+				<div class="works-card portfolio__maternity">
+					<a href="/portfolio/#portfolio-maternty">
 						<h3 class="works-card__title font__title--md-en">maternity</h3>
 						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp';  ?>" alt="マタニティフォトのサムネイル">
-					</div>
-				</a>
-				<a href="/portfolio/#portfolio-newborn">
-					<div class="works-card portfolio__newborn">
+					</a>
+				</div>
+
+				<div class="works-card portfolio__newborn">
+					<a href="/portfolio/#portfolio-newborn">
 						<h3 class="works-card__title font__title--md-en">newborn</h3>
 						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn1.webp'; ?>" alt="ニューボーンフォトのサムネイル">
-					</div>
-				</a>
-				<a href="/portfolio/#portfolio-event">
-					<div class="works-card portfolio__event">
+					</a>
+				</div>
+
+				<div class="works-card portfolio__event">
+					<a href="/portfolio/#portfolio-event">
 						<h3 class="works-card__title font__title--md-en">traditional<br>event</h3>
 						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event2.webp'; ?>" alt="イベントフォトのサムネイル">
-					</div>
-				</a>
-				<a href="/portfolio/#portfolio-profile">
-					<div class="works-card portfolio__profile">
+					</a>
+				</div>
+
+				<div class="works-card portfolio__profile">
+					<a href="/portfolio/#portfolio-profile">
 						<h3 class="works-card__title font__title--md-en">profile</h3>
 						<img loading="lazy" src="<?= get_template_directory_uri() .  '/assets/img/profile/profile2.webp'; ?>" alt="プロフィールフォトのサムネイル">
-					</div>
-				</a>
+					</a>
+				</div>
 			</div>
 		</section>
 		<!-- /.portfolio -->

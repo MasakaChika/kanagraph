@@ -28,7 +28,7 @@
 			<h2 class="concept__header font__title--lg-en">concept</h2>
 		</header>
 		<div class="concept__content">
-			<h2 class="concept__title">二度とない愛おしい瞬間を<br>一生モノの記憶へ</h2>
+			<h2 class="concept__title">二度とない愛おしい瞬間を　<br>一生モノの記憶へ</h2>
 			<p class="concept__text font__body--lg">誰もがかけがえのない存在であり、<br>
 				素敵だということを伝えられるような写真を<br>
 				目指しています。<br>
