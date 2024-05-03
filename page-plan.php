@@ -7,7 +7,7 @@
 		<div class="service">
 			<div class="service__wrapper">
 				<div class="service__title">
-					<h2 class="service__en">KANAGRAPH edits all photos.</h2>
+					<h2 class="service__en font__body--xl">KANAGRAPH edits all photos.</h2>
 					<span class="service__jp font__title--sm-jp">全てのデータを編集(レタッチ)します。</span>
 				</div>
 				<div class="plan__content">
@@ -19,7 +19,7 @@
 									<span class="plan__jp font__body--xs">ライトプラン</span>
 								</header>
 							</div>
-							<img src="<?= get_template_directory_uri() . '/assets/img/family/family4.webp'; ?>" alt="家族写真" class=" portfolio-section__photo plan__photo">
+							<img src="<?= get_template_directory_uri() . '/assets/img/family/family4.webp'; ?>" alt="家族写真" class=" portfolio-section__photo plan__photo" loading="lazy">
 						</div>
 						<div class="plan__introduction">
 							<p class="plan__desc font__body--sm">プロフィール撮影や<br>日常の何気ないシーンを残したい方に</p>
@@ -38,7 +38,7 @@
 									<span class="plan__jp font__body--xs">レギュラープラン</span>
 								</header>
 							</div>
-							<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event8.webp'; ?>" alt="七五三の写真" class=" portfolio-section__photo plan__photo">
+							<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event8.webp'; ?>" alt="七五三の写真" class=" portfolio-section__photo plan__photo" loading="lazy">
 						</div>
 						<div class="plan__introduction">
 							<p class="plan__desc font__body--sm">お宮参り、七五三、バースデーなど<br>節目のお祝いでたっぷり記録を残したい方に</p>
@@ -57,7 +57,7 @@
 									<span class="plan__jp font__body--xs">プレミアムプラン</span>
 								</header>
 							</div>
-							<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding2.webp'; ?>" alt="" class=" portfolio-section__photo plan__photo">
+							<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding2.webp'; ?>" alt="" class=" portfolio-section__photo plan__photo" loading="lazy">
 						</div>
 						<div class="plan__introduction">
 							<p class="plan__desc font__body--sm">ウェデイングや公園とお家の両方でファミリーフォトを撮りたい方におすすめ</p>

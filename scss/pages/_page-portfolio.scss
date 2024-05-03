@@ -16,10 +16,6 @@
   > section {
     grid-column: 2;
   }
-
-  @include mq {
-    margin-top: 40px;
-  }
 }
 
 .portfolio-section {
@@ -38,10 +34,6 @@
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
     gap: 0;
-
-    @include mq {
-      grid-template-columns: repeat(2, auto);
-    }
   }
 
   &__photo {
@@ -72,13 +64,98 @@
         align-self: center;
       }
     }
+  }
 
-    @include mq {
+  &__landscape {
+    display: grid;
+    grid-template-columns: 1fr;
+    &-info {
+      justify-self: end;
+    }
+
+    &-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include mq {
+  .page-portfolio {
+    margin-top: 80px;
+  }
+
+  .portfolio-section {
+    &__container {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    &__food {
       grid-template-columns: 1fr;
 
       &-container {
         grid-template-columns: repeat(2, 1fr);
       }
     }
+
+    &__landscape {
+      &-info {
+        display: none;
+      }
+      &-container {
+        grid-template-columns: 1fr;
+      }
+    }
   }
+
+  .food3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .food4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  &-content {
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    padding: 0.5rem;
+    background-color: var(--color-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
 }

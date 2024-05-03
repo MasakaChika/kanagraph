@@ -25,6 +25,10 @@
     grid-template-columns: 1fr;
     gap: clamp(1rem, 0.818rem + 0.909vw, 1.5rem);
   }
+
+  @include mq {
+    margin-top: 80px;
+  }
 }
 
 .prev-next {

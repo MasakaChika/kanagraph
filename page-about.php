@@ -6,12 +6,12 @@
 			<h2 class="page-about__header font__title--lg-en">About</h2>
 		</header>
 		<div class="page-about__photo">
-			<img src=<?= get_theme_file_uri('assets/img/portlate.png'); ?> alt="村越香奈が写っている写真" />
+			<img src=<?= get_theme_file_uri('assets/img/portlate.png'); ?> alt="村越香奈が写っている写真" loading="lazy" />
 		</div>
 		<div class="page-about__introduction">
 			<div class="page-about__profile">
 				<span class="page-about__role font__body--lg">Photographer</span>
-				<h2 class="page-about__name font__title--md-jp">村越 香奈</h2>
+				<h2 class="page-about__name font__title--xl-jp">村越 香奈</h2>
 				<span class="page-about__english-name font__body--xs">Kana Murakoshi</span>
 			</div>
 			<p class="page-about__desc font__body--lg">1993年生まれ。東京都出身。<br>

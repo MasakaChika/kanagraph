@@ -41,13 +41,13 @@
 		<section class="about" id="about">
 			<header class="banner about__title font__title--lg-en">about</header>
 			<div class="about__photo">
-				<img src="<?= get_template_directory_uri() . '/assets/img/portrait.webp'; ?>" alt="村越香奈のポートレート写真">
+				<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/portrait.webp'; ?>" alt="村越香奈のポートレート写真">
 			</div>
 			<div class="about__introduction">
-				<span class="about__role">Photographer</span>
-				<h2 class="about__name">村越 香奈</h2>
-				<span class="about__english-name">Kana Murakoshi</span>
-				<p class="about__origin">1993年生まれ。東京都出身。</p>
+				<span class="about__role font__body--xs">Photographer</span>
+				<h2 class="about__name font__title--xl-jp">村越 香奈</h2>
+				<span class="about__english-name  font__body--xs">Kana Murakoshi</span>
+				<p class="about__origin font__body--xs">1993年生まれ。東京都出身。</p>
 			</div>
 			<div class="button-container about__button">
 				<a href="/about/" class="button">more</a>
@@ -65,37 +65,37 @@
 				<a href="/portfolio/#portfolio-family">
 					<div class="works-card portfolio__family">
 						<h3 class="works-card__title font__title--md-en">family</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/family/family1.webp'; ?>" alt="ファミリーフォトのサムネイル">
+						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/family/family1.webp'; ?>" alt="ファミリーフォトのサムネイル">
 					</div>
 				</a>
 				<a href="/portfolio/#portfolio-wedding">
 					<div class="works-card portfolio__wedding">
 						<h3 class="works-card__title font__title--md-en">wedding</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding5.webp'; ?>" alt="ウェディングフォトのサムネイル">
+						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding5.webp'; ?>" alt="ウェディングフォトのサムネイル">
 					</div>
 				</a>
 				<a href="/portfolio/#portfolio-maternty">
 					<div class="works-card portfolio__maternity">
 						<h3 class="works-card__title font__title--md-en">maternity</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp';  ?>" alt="マタニティフォトのサムネイル">
+						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp';  ?>" alt="マタニティフォトのサムネイル">
 					</div>
 				</a>
 				<a href="/portfolio/#portfolio-newborn">
 					<div class="works-card portfolio__newborn">
 						<h3 class="works-card__title font__title--md-en">newborn</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn1.webp'; ?>" alt="ニューボーンフォトのサムネイル">
+						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn1.webp'; ?>" alt="ニューボーンフォトのサムネイル">
 					</div>
 				</a>
 				<a href="/portfolio/#portfolio-event">
 					<div class="works-card portfolio__event">
 						<h3 class="works-card__title font__title--md-en">traditional<br>event</h3>
-						<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event2.webp'; ?>" alt="イベントフォトのサムネイル">
+						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event2.webp'; ?>" alt="イベントフォトのサムネイル">
 					</div>
 				</a>
 				<a href="/portfolio/#portfolio-profile">
 					<div class="works-card portfolio__profile">
 						<h3 class="works-card__title font__title--md-en">profile</h3>
-						<img src="<?= get_template_directory_uri() .  '/assets/img/profile/profile2.webp'; ?>" alt="プロフィールフォトのサムネイル">
+						<img loading="lazy" src="<?= get_template_directory_uri() .  '/assets/img/profile/profile2.webp'; ?>" alt="プロフィールフォトのサムネイル">
 					</div>
 				</a>
 			</div>
