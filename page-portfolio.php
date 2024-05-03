@@ -120,6 +120,10 @@
 			</div>
 		</section>
 	</div>
-
+	<div class="toinstagram">
+		<a href="https://www.instagram.com/kanagraph__1005" target="_blank">
+			<img src="<?= get_template_directory_uri() . '/assets/img/toinstagram.png'; ?>" alt="" loading="lazy">
+		</a>
+	</div>
 </main>
 <?php get_footer(); ?>

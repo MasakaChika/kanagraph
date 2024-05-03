@@ -328,6 +328,7 @@ main {
     display: flex;
   }
   .site-nav {
+    z-index: 5;
     position: fixed;
     top: 0;
     right: 0;
@@ -920,34 +921,6 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .page-portfolio {
-    margin-top: 80px;
-  }
-  .portfolio-section__container {
-    grid-template-columns: repeat(2, auto);
-  }
-  .portfolio-section__food {
-    grid-template-columns: 1fr;
-  }
-  .portfolio-section__food-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .portfolio-section__landscape-info {
-    display: none;
-  }
-  .portfolio-section__landscape-container {
-    grid-template-columns: 1fr;
-  }
-  .food3 {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .food4 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-}
 .modal {
   display: none;
   position: fixed;
@@ -982,6 +955,49 @@ main {
   color: #fff;
 }
 
+.toinstagram {
+  width: 100px;
+  height: auto;
+  position: fixed;
+  top: 85%;
+  left: 80%;
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  transition: 1.5s ease-in-out;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .page-portfolio {
+    margin-top: 80px;
+  }
+  .portfolio-section__container {
+    grid-template-columns: repeat(2, auto);
+  }
+  .portfolio-section__food {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-section__food-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-section__landscape-info {
+    display: none;
+  }
+  .portfolio-section__landscape-container {
+    grid-template-columns: 1fr;
+  }
+  .food3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .food4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .toinstagram {
+    top: 85%;
+    left: 70%;
+  }
+}
 .contact {
   grid-column: 1/-1;
   width: 100%;

@@ -57,7 +57,7 @@
 			<label class="form_block contact__place">
 				<div class="form_label font__title--sm-jp">ご希望の撮影場所<span class="form-required">*</span></div>
 				<p class="contact__plece-permit font__body--xs">※撮影場所によっては撮影許可が降りず、ご希望に添えないこともございますのでご了承ください</p>
-				<input type="text" name="entry.2092238618" class="form_field" placeholder="" required>
+				<input type="text" name="entry.209205121" class="form_field" placeholder="" required>
 			</label>
 			<!-- オプションの有無 -->
 			<label class="form_block contact__option">
@@ -86,7 +86,7 @@
 			</div>
 
 		</form>
-		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/contact/thanks';}"></iframe>
+		<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/contact/thanks';}"></iframe> -->
 
 		<div>
 </main>
