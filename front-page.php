@@ -9,7 +9,7 @@
 	<div class="main-content">
 		<!-- news -->
 		<section class="news" id="news">
-			<header class="banner news__title font__title--lg-en">news</header>
+			<header class="banner news__title font__title--xl-en">news</header>
 			<ul class="news__article">
 				<?php
 				$args = array(
@@ -39,7 +39,7 @@
 
 		<!-- about -->
 		<section class="about" id="about">
-			<header class="banner about__title font__title--lg-en">about</header>
+			<header class="banner about__title font__title--xl-en">about</header>
 			<div class="about__photo">
 				<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/portrait.webp'; ?>" alt="村越香奈のポートレート写真">
 			</div>
@@ -57,7 +57,7 @@
 
 		<!-- portfolio -->
 		<section class="portfolio" id="portfolio">
-			<header class="banner portfolio__title font__title--lg-en">portfolio</header>
+			<header class="banner portfolio__title font__title--xl-en">portfolio</header>
 			<div class="portfolio__container">
 				<?php
 				$target_page_url = "page-portfolio.php";
@@ -110,7 +110,7 @@
 		<!-- plan&contact -->
 		<div class="plan-contact">
 			<section class="frontpage-plan" id="plan">
-				<header class="banner frontpage-plan__title font__title--lg-en">plan</header>
+				<header class="banner frontpage-plan__title font__title--xl-en">plan</header>
 				<p class="frontpage-plan__desc font__body--md">３つの撮影プランをご用意しました。
 					撮影日までの流れもこちらをご覧ください</p>
 				<div class="button-container frontpage-plan__button">

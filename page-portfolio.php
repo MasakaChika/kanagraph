@@ -2,11 +2,11 @@
 <main>
 	<div class="page-portfolio">
 		<header class="banner banner-type2">
-			<h2 class="page-portfolio__header font__title--lg-en">portfolio</h2>
+			<h2 class="page-portfolio__header font__title--xl-en">portfolio</h2>
 		</header>
 
 		<section class="portfolio-section" id="portfolio-family">
-			<h2 class="portfolio-section__title font__title--large-en">family</h2>
+			<h2 class="portfolio-section__title font__title--lg-en">family</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/family/family1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
 				<img src="<?= get_template_directory_uri() . '/assets/img/family/family2.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
@@ -20,7 +20,7 @@
 
 		</section>
 		<section class="portfolio-section" id="portfolio-wedding">
-			<h2 class="portfolio-section__title font__title--large-en">wedding</h2>
+			<h2 class="portfolio-section__title font__title--lg-en">wedding</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
 				<img src="<?= get_template_directory_uri() . '/assets/img/wedding/wedding2.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
@@ -34,7 +34,7 @@
 		</section>
 
 		<section class="portfolio-section" id="portfolio-maternty">
-			<h2 class="portfolio-section__title font__title--large-en">maternty</h2>
+			<h2 class="portfolio-section__title font__title--lg-en">maternty</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
 				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity2.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
@@ -48,7 +48,7 @@
 		</section>
 
 		<section class="portfolio-section" id="portfolio-newborn">
-			<h2 class="portfolio-section__title font__title--large-en">new born</h2>
+			<h2 class="portfolio-section__title font__title--lg-en">new born</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
 				<img src="<?= get_template_directory_uri() . '/assets/img/newborn/newborn2.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
@@ -76,7 +76,7 @@
 		</section>
 
 		<section class="portfolio-section" id="portfolio-profile">
-			<h2 class="portfolio-section__title font__title--large-en">profile</h2>
+			<h2 class="portfolio-section__title font__title--lg-en">profile</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
 				<img src="<?= get_template_directory_uri() . '/assets/img/profile/profile2.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
@@ -90,7 +90,7 @@
 		</section>
 
 		<section class="portfolio-section" id="portfolio-other">
-			<h2 class="portfolio-section__title font__title--large-en">other</h2>
+			<h2 class="portfolio-section__title font__title--lg-en">other</h2>
 			<div class="portfolio-section__food">
 				<h3 class="portfolio-section__subtitle font__title--sm-en">food</h3>
 				<div class="portfolio-section__food-container">

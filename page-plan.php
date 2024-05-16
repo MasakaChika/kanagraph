@@ -2,7 +2,7 @@
 <main>
 	<div class="plan">
 		<header class="banner banner-type1">
-			<h2 class="plan__header font__title--lg-en">plan</h2>
+			<h2 class="plan__header font__title--xl-en">plan</h2>
 		</header>
 		<div class="service">
 			<div class="service__wrapper">

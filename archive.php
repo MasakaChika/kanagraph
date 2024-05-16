@@ -3,7 +3,7 @@
 <main>
 	<section class="archive-news">
 		<header class="banner banner-type2">
-			<h2 class="archive-news__header font__title--lg-en">News</h2>
+			<h2 class="archive-news__header font__title--xl-en">News</h2>
 		</header>
 		<div class="archive-news__container">
 			<ul class="archive-news__article">

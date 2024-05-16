@@ -2,7 +2,7 @@
 <main>
 	<div class="contact">
 		<header class="banner banner-type2">
-			<h2 class="contact__header font__title--lg-en">Contact</h2>
+			<h2 class="contact__header font__title--xl-en">Contact</h2>
 		</header>
 
 		<div class="contact__container">

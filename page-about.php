@@ -3,7 +3,7 @@
 <main>
 	<section class="page-about">
 		<header class="banner banner-type1">
-			<h2 class="page-about__header font__title--lg-en">About</h2>
+			<h2 class="page-about__header font__title--xl-en">About</h2>
 		</header>
 		<div class="page-about__photo">
 			<img src=<?= get_theme_file_uri('assets/img/portlate.png'); ?> alt="村越香奈が写っている写真" loading="lazy" />
@@ -25,7 +25,7 @@
 
 	<section class="concept">
 		<header class="banner banner-type3">
-			<h2 class="concept__header font__title--lg-en">concept</h2>
+			<h2 class="concept__header font__title--xl-en">concept</h2>
 		</header>
 		<div class="concept__content">
 			<h2 class="concept__title">二度とない愛おしい瞬間を　<br>一生モノの記憶へ</h2>
