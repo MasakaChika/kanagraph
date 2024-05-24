@@ -25,7 +25,7 @@
 								<svg width="40" height="56" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M38.5 1C26 15.5 3 29.5 3 29.5C3 29.5 26.5 41 38.5 55" stroke="#A8815B" stroke-width="2" stroke-linecap="round" />
 								</svg>
-								<span class="font__body--xs"><?= get_the_title($previous_post); ?></span>
+								<span class="font__body--xxs"><?= get_the_title($previous_post); ?></span>
 							</a>
 						</div>
 					<?php endif; ?>
@@ -35,7 +35,7 @@
 					?>
 						<div class="prev-next__item prev-next__item-next">
 							<a href="<?php the_permalink($next_post); ?>">
-								<span class="font__body--xs"><?= get_the_title($next_post); ?></span>
+								<span class="font__body--xxs"><?= get_the_title($next_post); ?></span>
 								<svg width="40" height="56" viewBox="0 0 40 56" transform="scale(-1, 1)" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 									<path d="M38.5 1C26 15.5 3 29.5 3 29.5C3 29.5 26.5 41 38.5 55" stroke="#A8815B" stroke-width="2" stroke-linecap="round" />

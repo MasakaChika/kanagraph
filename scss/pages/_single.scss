@@ -44,7 +44,7 @@
 
   &__item {
     svg {
-      height: 1rem;
+      height: clamp(0.8rem, 0.727rem + 0.36vw, 1rem);
       width: auto;
     }
   }

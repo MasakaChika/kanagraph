@@ -29,6 +29,11 @@
     // font-size: clamp(0.7rem, 0.636rem + 0.32vw, 0.875rem);
     font-weight: 300;
   }
+
+  &--xxs {
+    font-size: clamp(0.6rem, 0.5rem + 0.5vw, 0.875rem);
+    font-weight: 300;
+  }
 }
 
 .font__title {
@@ -42,7 +47,7 @@
 
   &--lg-en {
     font-family: var(--font-title-en);
-    font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
+    font-size: clamp(1.4rem, 0.818rem + 2.91vw, 3rem);
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 0.1em;
@@ -50,7 +55,7 @@
 
   &--md-en {
     font-family: var(--font-title-en);
-    font-size: clamp(1.2rem, 0.545rem + 3.27vw, 3rem);
+    font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 0.07em;
@@ -58,7 +63,8 @@
 
   &--sm-en {
     font-family: var(--font-title-en);
-    font-size: clamp(1rem, 0.855rem + 0.73vw, 1.4rem);
+    font-size: clamp(0.9rem, 0.718rem + 0.91vw, 1.4rem);
+    // font-size: clamp(1rem, 0.855rem + 0.73vw, 1.4rem);
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 0.1em;

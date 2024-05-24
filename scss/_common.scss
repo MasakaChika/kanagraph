@@ -46,6 +46,13 @@ main {
   grid-template-columns: minmax(2rem, 1fr) minmax(auto, 1168px) minmax(2rem, 1fr);
 }
 
+.sp-br {
+  display: none;
+
+  @include mq {
+    display: block;
+  }
+}
 /*  ------- svg ------- */
 #icon-instagram {
   width: 20px;
@@ -86,7 +93,7 @@ main {
     content: '>';
     position: absolute;
     top: 50%;
-    right: clamp(0.8rem, 0.364rem + 2.18vw, 2rem);
+    right: clamp(0.25rem, -0.386rem + 3.18vw, 2rem);
     transform: translateY(-50%);
   }
   @media (any-hover: hover) {

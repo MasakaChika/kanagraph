@@ -93,7 +93,6 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
-    justify-self: center;
   }
 
   &__title {
@@ -105,7 +104,6 @@
   }
 
   &__text {
-    text-align: center;
     line-height: 1.5;
   }
 }

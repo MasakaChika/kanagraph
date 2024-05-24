@@ -28,16 +28,16 @@
 			<h2 class="concept__header font__title--xl-en">concept</h2>
 		</header>
 		<div class="concept__content">
-			<h2 class="concept__title">二度とない愛おしい瞬間を　<br>一生モノの記憶へ</h2>
+			<h2 class="concept__title">二度とない愛おしい瞬間を<br>一生モノの記憶へ</h2>
 			<p class="concept__text font__body--lg">誰もがかけがえのない存在であり、<br>
-				素敵だということを伝えられるような写真を<br>
+				素敵だということを<br class="sp-br">伝えられるような写真を<br>
 				目指しています。<br>
 				誰かと比較したりせず、<br>
-				ありのままのあなたが何より特別で美しいのだと<br>
-				愛を込めてシャッターを切っています。<br>
+				ありのままのあなたが<br class="sp-br">何より特別で美しいのだと<br>
+				愛を込めて<br class="sp-br">シャッターを切っています。<br>
 				あっという間に過ぎ去ってしまう<br>
 				特別な今を永遠に…。<br>
-				カタチに残すお手伝いをさせてください。</p>
+				カタチに残すお手伝いを<br class="sp-br">させてください。</p>
 		</div>
 	</section>
 </main>

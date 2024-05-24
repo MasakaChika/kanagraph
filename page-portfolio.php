@@ -62,7 +62,7 @@
 		</section>
 
 		<section class="portfolio-section" id="portfolio-event">
-			<h2 class="portfolio-section__title font__title--md-en">traditional event</h2>
+			<h2 class="portfolio-section__title font__title--lg-en">traditional event</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
 				<img src="<?= get_template_directory_uri() . '/assets/img/traditional-event/event2.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
