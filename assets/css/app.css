@@ -912,6 +912,11 @@ main {
 .portfolio-section__title {
   justify-self: center;
 }
+@media (max-width: 768px) {
+  .portfolio-section__title {
+    letter-spacing: 0.07em;
+  }
+}
 .portfolio-section__container {
   grid-row: 2;
   display: grid;

@@ -27,6 +27,9 @@
 
   &__title {
     justify-self: center;
+    @include mq {
+      letter-spacing: 0.07em;
+    }
   }
 
   &__container {
