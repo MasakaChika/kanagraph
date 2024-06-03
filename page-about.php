@@ -6,7 +6,7 @@
 			<h2 class="page-about__header font__title--xl-en">About</h2>
 		</header>
 		<div class="page-about__photo">
-			<img src=<?= get_theme_file_uri('assets/img/portlate.png'); ?> alt="村越香奈が写っている写真" loading="lazy" />
+			<img loading="lazy" src=<?= get_theme_file_uri('assets/img/portrait.webp'); ?> alt="写真:フォトグラファー村越香奈が花畑の中にいる" />
 		</div>
 		<div class="page-about__introduction">
 			<div class="page-about__profile">

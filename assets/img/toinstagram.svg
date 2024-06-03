@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: TrajanPro3-Semibold, 'Trajan Pro 3';
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-size: 9px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        font-weight: 600;
+      }
+
+      .cls-5 {
+        fill: #a8815a;
+      }
+
+      .cls-5, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        font-family: ShipporiMincho-Medium, 'Shippori Mincho';
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        font-family: ShipporiMincho-SemiBold, 'Shippori Mincho';
+        opacity: .86;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <circle class="cls-5" cx="50" cy="50" r="50"/>
+      <text class="cls-2" transform="translate(16.47 41.32) rotate(-68)"><tspan x="0" y="0">最</tspan></text>
+      <text class="cls-2" transform="translate(20.26 32.25) rotate(-51.67)"><tspan x="0" y="0">新</tspan></text>
+      <text class="cls-2" transform="translate(26.19 24.86) rotate(-36.02)"><tspan x="0" y="0">の</tspan></text>
+      <text class="cls-1" transform="translate(34.09 19.43) rotate(-22.62)"><tspan x="0" y="0">P</tspan></text>
+      <text class="cls-1" transform="translate(40.48 16.8) rotate(-9.77)"><tspan x="0" y="0">o</tspan></text>
+      <text class="cls-1" transform="translate(48.72 15.56) rotate(2.9)"><tspan x="0" y="0">r</tspan></text>
+      <text class="cls-1" transform="translate(55.6 16) rotate(14.03)"><tspan x="0" y="0">t</tspan></text>
+      <text class="cls-1" transform="translate(62.19 17.8) rotate(24.94)"><tspan x="0" y="0">f</tspan></text>
+      <text class="cls-1" transform="translate(67.71 20.35) rotate(37.05)"><tspan x="0" y="0">o</tspan></text>
+      <text class="cls-1" transform="translate(74.26 25.58) rotate(48.89)"><tspan x="0" y="0">l</tspan></text>
+      <text class="cls-1" transform="translate(78.16 30.27) rotate(57.98)"><tspan x="0" y="0">i</tspan></text>
+      <text class="cls-1" transform="translate(80.72 34.22) rotate(68.96)"><tspan x="0" y="0">o</tspan></text>
+      <text class="cls-3" transform="translate(15.68 69.75) rotate(53.51)"><tspan x="0" y="0">こ</tspan></text>
+      <text class="cls-3" transform="translate(21.97 77.95) rotate(38.59)"><tspan x="0" y="0">ち</tspan></text>
+      <text class="cls-3" transform="translate(29.43 83.83) rotate(24.81)"><tspan x="0" y="0">ら</tspan></text>
+      <text class="cls-3" transform="translate(39.6 88.21) rotate(8.64)"><tspan x="0" y="0">か</tspan></text>
+      <text class="cls-3" transform="translate(51.01 89.57) rotate(-7.92)"><tspan x="0" y="0">ら</tspan></text>
+      <text class="cls-3" transform="translate(60.12 88.28) rotate(-21.34)"><tspan x="0" y="0">ど</tspan></text>
+      <text class="cls-3" transform="translate(69.83 84.27) rotate(-36.62)"><tspan x="0" y="0">う</tspan></text>
+      <text class="cls-3" transform="translate(77.78 78.2) rotate(-51.07)"><tspan x="0" y="0">ぞ</tspan></text>
+      <path class="cls-4" d="M50,30.99c5.18,0,5.81.04,7.84.11,1.99.08,3.38.41,4.61.9,1.28.49,2.33,1.13,3.38,2.18,1.05,1.05,1.69,2.1,2.17,3.37.49,1.24.83,2.63.9,4.61.08,2.03.11,2.66.11,7.84s-.04,5.81-.11,7.84c-.07,1.99-.41,3.38-.9,4.61-.49,1.28-1.12,2.33-2.17,3.38s-2.1,1.69-3.38,2.17c-1.24.49-2.62.83-4.61.9-2.02.08-2.66.11-7.84.11s-5.81-.04-7.84-.11c-1.99-.07-3.37-.41-4.61-.9-1.27-.49-2.32-1.12-3.37-2.17-1.05-1.05-1.69-2.1-2.18-3.38-.49-1.24-.82-2.62-.9-4.61-.08-2.02-.11-2.66-.11-7.84s.04-5.81.11-7.84c.07-1.99.41-3.37.9-4.61.49-1.27,1.13-2.32,2.18-3.37,1.05-1.05,2.1-1.69,3.37-2.18,1.24-.49,2.63-.82,4.61-.9,2.03-.08,2.66-.11,7.84-.11ZM50,33.46c-5.4,0-6.04.04-8.14.11-1.95.07-3.04.45-3.75.71-1.84.75-3.07,1.99-3.82,3.83-.26.71-.64,1.8-.71,3.75-.08,2.1-.11,2.74-.11,8.14s.04,6.04.11,8.14c.07,1.95.45,3.04.71,3.75.75,1.84,1.99,3.07,3.82,3.83.71.26,1.8.64,3.75.71,2.1.07,2.74.11,8.14.11s6.04-.04,8.14-.11c1.95-.08,3.04-.45,3.75-.71,1.84-.75,3.07-1.99,3.83-3.83.26-.71.64-1.8.71-3.75.07-2.1.11-2.74.11-8.14s-.04-6.04-.11-8.14c-.08-1.95-.45-3.04-.71-3.75-.75-1.84-1.99-3.08-3.83-3.83-.71-.26-1.8-.64-3.75-.71-2.1-.08-2.74-.11-8.14-.11ZM50,57.61c4.2,0,7.61-3.41,7.61-7.61s-3.41-7.61-7.61-7.61-7.61,3.41-7.61,7.61,3.41,7.61,7.61,7.61ZM50,40.25c5.4,0,9.75,4.35,9.75,9.75s-4.35,9.75-9.75,9.75-9.75-4.35-9.75-9.75,4.35-9.75,9.75-9.75ZM62.45,39.87c0,1.27-1.05,2.25-2.32,2.25s-2.25-.98-2.25-2.25.97-2.33,2.25-2.33,2.32,1.05,2.32,2.33Z"/>
+    </g>
+  </g>
+</svg>

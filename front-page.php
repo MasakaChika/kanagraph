@@ -41,7 +41,7 @@
 		<section class="about" id="about">
 			<header class="banner about__title font__title--xl-en">about</header>
 			<div class="about__photo">
-				<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/portrait.webp'; ?>" alt="村越香奈のポートレート写真">
+				<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/portrait.webp'; ?>" alt="写真:フォトグラファー村越香奈が花畑の中にいる">
 			</div>
 			<div class="about__introduction">
 				<span class="about__role font__body--xs">Photographer</span>
@@ -77,7 +77,7 @@
 				</div>
 
 				<div class="works-card portfolio__maternity">
-					<a href="/portfolio/#portfolio-maternty">
+					<a href="/portfolio/#portfolio-maternity">
 						<h3 class="works-card__title font__title--md-en">maternity</h3>
 						<img loading="lazy" src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp';  ?>" alt="マタニティフォトのサムネイル">
 					</a>

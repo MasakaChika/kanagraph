@@ -103,18 +103,18 @@
 				<div class="process__container">
 					<div class="process__step">
 						<span class="process__step-number">01</span>
-						<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step1.png'; ?>" alt="Step 1">
+						<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step1.svg'; ?>" alt="Step 1">
 						<p class="font__body--sm">①コンタクトフォームより必要事項を記入してお申し込みください。</p>
 					</div>
 
 					<div class="process__step">
 						<span class="process__step-number">02</span>
-						<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step2.png'; ?>" alt="Step 2">
+						<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step2.svg'; ?>" alt="Step 2">
 						<p class="font__body--sm">②確認メールをお送りいたしますので必ずご確認ください。撮影地やご希望のプランをお聞きし、見積書を作成いたしますので、撮影日前日までに振り込みをお願いいたします。</p>
 					</div>
 					<div class="process__step">
 						<span class="process__step-number">03</span>
-						<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step3.png'; ?>" alt="Step 3">
+						<img class="process__step-img" src="<?= get_template_directory_uri() . '/assets/img/step3.svg'; ?>" alt="Step 3">
 						<p class="font__body--sm">③撮影当日素敵な思い出になるよう心を込めて撮影いたします。</p>
 					</div>
 					<div class="process__step">

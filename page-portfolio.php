@@ -33,8 +33,8 @@
 			</div>
 		</section>
 
-		<section class="portfolio-section" id="portfolio-maternty">
-			<h2 class="portfolio-section__title font__title--lg-en">maternty</h2>
+		<section class="portfolio-section" id="portfolio-maternity">
+			<h2 class="portfolio-section__title font__title--lg-en">maternity</h2>
 			<div class="portfolio-section__container">
 				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity1.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
 				<img src="<?= get_template_directory_uri() . '/assets/img/maternity/maternity2.webp'; ?>" alt="" class="portfolio-section__photo" loading="lazy">
@@ -122,7 +122,7 @@
 	</div>
 	<div class="toinstagram">
 		<a href="https://www.instagram.com/kanagraph__1005" target="_blank">
-			<img src="<?= get_template_directory_uri() . '/assets/img/toinstagram.png'; ?>" alt="" loading="lazy">
+			<img src="<?= get_template_directory_uri() . '/assets/img/toinstagram.svg'; ?>" alt="" loading="lazy">
 		</a>
 	</div>
 </main>
